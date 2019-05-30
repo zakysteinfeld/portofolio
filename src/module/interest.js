@@ -19,74 +19,74 @@ export default class Interest extends Component {
                     <div style={{ marginTop: '3%' }}>
                         <Row className='center-pos' style={{ width: '60%', margin: 'auto', paddingBottom: '4%' }}>
                             <Col>
-                                    <MDBContainer className='shadow'>
-                                        <MDBCarousel
-                                            activeItem={1}
-                                            length={4}
-                                            showControls={true}
-                                            showIndicators={true}
-                                            className='z-depth-1'
-                                            >
-                                            <MDBCarouselInner>
-                                                <MDBCarouselItem itemId='1'>
-                                                    <MDBView>
-                                                        <img
-                                                            className='d-block w-100'
-                                                            src={Img1}
-                                                            alt='Madden NFL 19'
-                                                        />
-                                                        <MDBMask overlay='black-light' />
-                                                    </MDBView>
-                                                    <MDBCarouselCaption>
-                                                        <h3 className='h3-responsive'>Games</h3>
-                                                        <p>Madden NFL 19</p>
-                                                    </MDBCarouselCaption>
-                                                </MDBCarouselItem>
-                                                <MDBCarouselItem itemId='2'>
-                                                    <MDBView>
-                                                        <img
+                                <MDBContainer className='shadow'>
+                                    <MDBCarousel
+                                        activeItem={1}
+                                        length={4}
+                                        showControls={true}
+                                        showIndicators={true}
+                                        className='z-depth-1'
+                                        >
+                                        <MDBCarouselInner>
+                                            <MDBCarouselItem itemId='1'>
+                                                <MDBView>
+                                                    <img
                                                         className='d-block w-100'
-                                                        src={Img2}
-                                                        alt='Polar Bears Flag Football Team'
-                                                        />
-                                                        <MDBMask overlay='black-strong' />
-                                                    </MDBView>
-                                                    <MDBCarouselCaption>
-                                                        <h3 className='h3-responsive' style={{ color: 'black' }}>Sport</h3>
-                                                        <p style={{ color: 'black' }}>Flag Football</p>
-                                                    </MDBCarouselCaption>
-                                                </MDBCarouselItem>
-                                                <MDBCarouselItem itemId='3'>
-                                                    <MDBView>
-                                                        <img
-                                                        className='d-block w-100'
-                                                        src={Img3}
-                                                        alt='AKB48 55th Single 「ジワるDAYS」'
-                                                        />
-                                                        <MDBMask overlay='black-slight' />
-                                                    </MDBView>
-                                                    <MDBCarouselCaption>
-                                                        <h3 className='h3-responsive'>Japanese Idol</h3>
-                                                        <p>AKB48</p>
-                                                    </MDBCarouselCaption>
-                                                </MDBCarouselItem>
-                                                <MDBCarouselItem itemId='4'>
-                                                    <MDBView>
-                                                        <img
-                                                        className='d-block w-100'
-                                                        src={Img4}
-                                                        alt='Apple Music'
-                                                        />
-                                                        <MDBMask overlay='black-slight' />
-                                                    </MDBView>
-                                                    <MDBCarouselCaption>
-                                                        <h3 className='h3-responsive' style={{ color: 'black' }}>Music</h3>
-                                                        <p style={{ color: 'black' }}>Apple Music</p>
-                                                    </MDBCarouselCaption>
-                                                </MDBCarouselItem>
-                                            </MDBCarouselInner>
-                                        </MDBCarousel>
-                                    </MDBContainer>
+                                                        src={Img1}
+                                                        alt='Madden NFL 19'
+                                                    />
+                                                    <MDBMask overlay='black-light' />
+                                                </MDBView>
+                                                {/* <MDBCarouselCaption>
+                                                    <h3 className='h3-responsive'>Games</h3>
+                                                    <p>Madden NFL 19</p>
+                                                </MDBCarouselCaption> */}
+                                            </MDBCarouselItem>
+                                            <MDBCarouselItem itemId='2'>
+                                                <MDBView>
+                                                    <img
+                                                    className='d-block w-100'
+                                                    src={Img2}
+                                                    alt='Polar Bears Flag Football Team'
+                                                    />
+                                                    <MDBMask overlay='black-strong' />
+                                                </MDBView>
+                                                {/* <MDBCarouselCaption>
+                                                    <h3 className='h3-responsive' style={{ color: 'black' }}>Sport</h3>
+                                                    <p style={{ color: 'black' }}>Flag Football</p>
+                                                </MDBCarouselCaption> */}
+                                            </MDBCarouselItem>
+                                            <MDBCarouselItem itemId='3'>
+                                                <MDBView>
+                                                    <img
+                                                    className='d-block w-100'
+                                                    src={Img3}
+                                                    alt='AKB48 55th Single 「ジワるDAYS」'
+                                                    />
+                                                    <MDBMask overlay='black-slight' />
+                                                </MDBView>
+                                                {/* <MDBCarouselCaption>
+                                                    <h3 className='h3-responsive'>Japanese Idol</h3>
+                                                    <p>AKB48</p>
+                                                </MDBCarouselCaption> */}
+                                            </MDBCarouselItem>
+                                            <MDBCarouselItem itemId='4'>
+                                                <MDBView>
+                                                    <img
+                                                    className='d-block w-100'
+                                                    src={Img4}
+                                                    alt='Apple Music'
+                                                    />
+                                                    <MDBMask overlay='black-slight' />
+                                                </MDBView>
+                                                {/* <MDBCarouselCaption>
+                                                    <h3 className='h3-responsive' style={{ color: 'black' }}>Music</h3>
+                                                    <p style={{ color: 'black' }}>Apple Music</p>
+                                                </MDBCarouselCaption> */}
+                                            </MDBCarouselItem>
+                                        </MDBCarouselInner>
+                                    </MDBCarousel>
+                                </MDBContainer>
                             </Col>
                         </Row>
                     </div>

@@ -11,7 +11,7 @@ export default class EduCareer extends Component {
                 </div>
                 <div style={{ marginTop: '3%' }}>
                     <Row className='center-pos' style={{ width: '60%', margin: 'auto', paddingBottom: '6%' }}>
-                        <Col md={6}>
+                        <Col md={6} style={{ marginTop: '1%' }}>
                             <div className='card shadow'>
                                 <div>
                                     <text><b>Education</b></text>
@@ -27,7 +27,7 @@ export default class EduCareer extends Component {
                                 </div>
                             </div>
                         </Col>
-                        <Col md={6}>
+                        <Col md={6} style={{ marginTop: '1%' }}>
                             <div className='card shadow'>
                                 <div>
                                     <text><b>Career</b></text>

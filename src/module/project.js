@@ -14,21 +14,21 @@ export default class EduCareer extends Component {
                 </div>
                 <div style={{ marginTop: '3%' }}>
                     <Row className='center-pos' style={{ width: '60%', margin: 'auto', paddingBottom: '6%', textAlign: 'center' }}>
-                        <Col md={4}>
+                        <Col md={4} style={{ marginTop: '1%' }}>
                             <div className='card shadow'>
                                 <img src={Img1} alt={'PT Astra International Tbk'} style={{ width: '100%', margin: 'auto' }} />
                                 <Divider />
                                 <text className='project-name'>Portal AHASS</text>
                             </div>
                         </Col>
-                        <Col md={4}>
+                        <Col md={4} style={{ marginTop: '1%' }}>
                             <div className='card shadow'>
                                 <img src={Img2} alt={'Boga Group'} style={{ width: '50.5%', margin: 'auto' }} />
                                 <Divider />
                                 <text className='project-name'>Boga Royalty Apps</text>
                             </div>
                         </Col>
-                        <Col md={4}>
+                        <Col md={4} style={{ marginTop: '1%' }}>
                             <div className='card shadow'>
                                 <img src={Img3} alt={'PT Anabatic Thecnologies Tbk'} style={{ width: '75%', margin: 'auto' }} />
                                 <Divider />
