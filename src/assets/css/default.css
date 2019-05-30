@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Josefin+Sans:300|Luckiest+Guy|Open+Sans+Condensed:300|Open+Sans|Roboto+Condensed|Roboto|Source+Sans+Pro:400&display=swap');
+
+.header {
+    width: 70%;
+    margin: auto;
+}
+
+.footer {
+    text-align: center;
+    font-size: 12px;
+    margin: 15px;
+}
+
+.layout {
+    margin-top: 4%;
+    margin: auto;
+    background-color: #ffff;
+}
+
+.bg-img {
+    margin: auto;
+    height: 400px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+}
+
+.name-box {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 5px;
+    padding: 7px;
+    border: 1px solid rgb(0, 26, 46);
+    display: block;
+    text-align: center;
+    background: rgb(0, 26, 46);
+    width: 150px;
+    line-height: 1.5em;
+    overflow: hidden;
+}
+
+.hi {
+    /* margin-left: -45px; */
+    font-family: 'Open Sans';
+    font-size: 120px;
+    font-weight: 999;
+}
+
+.intro {
+    font-family: 'Roboto';
+    text-align: justify;
+}
+
+.about-me {
+    text-align: center;
+    font-family: 'Roboto Bold';
+    font-size: 40px;
+    color: #fff;
+}
+
+.card {
+    width : 90%;
+    height : 100%;
+    border-radius: 5px;
+    padding: 4%;
+    background-color: white;
+}
+
+.center-pos {
+    float: inherit;
+    top: 50%;
+    left: 50%;
+    transform: translate(5%, 0%);
+    font-family: 'Open Sans';
+}
+
+.shadow {
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+}
+
+.shadow-layout {
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+}
+
+/* For demo */
+.ant-carousel .slick-slide {
+    text-align: center;
+    height: 160px;
+    line-height: 160px;
+    background: #364d79;
+    overflow: hidden;
+  }
+  
+  .ant-carousel .slick-slide h3 {
+    color: #fff;
+  }
