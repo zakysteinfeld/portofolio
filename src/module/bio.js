@@ -19,7 +19,7 @@ export default class Bio extends Component {
                         <Row style={{ marginTop: '-20px', marginLeft: '-5px' }}>
                             <Col className='intro'>
                                 <text>
-                                    &nbsp;&nbsp;&nbsp; My name is <b>Zaky</b>, I'm a Front-end Developer currently, using javascript framework <b>ReactJS</b>. with speciality in <b>.NET</b> on the back.
+                                    &nbsp;&nbsp;&nbsp; My name is <b>Zaky</b>, I'm a Front-end Developer currently, using javascript framework <b>ReactJS</b>. with speciality in <b>.NET (C#)</b> on the back.
                                 </text>
                             </Col>
                         </Row>

@@ -63,7 +63,7 @@ export default class Interest extends Component {
                                                     <MDBMask overlay='black-slight' />
                                                 </MDBView>
                                                 <MDBCarouselCaption>
-                                                    <h3 className='h3-responsive'>Idol</h3>
+                                                    <h3 className='h3-responsive'>Japanese Idol</h3>
                                                     <p>AKB48</p>
                                                 </MDBCarouselCaption>
                                             </MDBCarouselItem>

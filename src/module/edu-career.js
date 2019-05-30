@@ -14,7 +14,9 @@ export default class EduCareer extends Component {
                         <Col md={6}>
                             <div className='card shadow'>
                                 <div>
-                                    <text>Education</text>
+                                    <text><b>Education</b></text>
+                                </div>
+                                <div className='career-edu-div'>
                                     <Divider />
                                 </div>
                                 <div>
@@ -28,12 +30,15 @@ export default class EduCareer extends Component {
                         <Col md={6}>
                             <div className='card shadow'>
                                 <div>
-                                    <text>Career</text>
+                                    <text><b>Career</b></text>
+                                </div>
+                                <div className='career-edu-div'>
                                     <Divider />
                                 </div>
                                 <div>
                                     <text><b>2016</b> <b style={{ color: '#007bff' }}>/</b><b style={{ color: '#f0ab00' }}>/</b> Web Developer Intern.<br/> <b style={{ color: '#f0ab00' }}>・</b>PT Bandung International Aviation</text><br/>
-                                    <text><b>2017 - Present</b> <b style={{ color: '#007bff' }}>/</b><b style={{ color: '#f0ab00' }}>/</b> .NET Developer & Front-end Developer<br/> <b style={{ color: '#f0ab00' }}>・</b>PT Walden Global Services</text><br/>
+                                    <text><b>2017 - Present</b> <b style={{ color: '#007bff' }}>/</b><b style={{ color: '#f0ab00' }}>/</b> .NET Developer<br/> <b style={{ color: '#f0ab00' }}>・</b>PT Walden Global Services</text><br/>
+                                    <text><b>2019 - Present</b> <b style={{ color: '#007bff' }}>/</b><b style={{ color: '#f0ab00' }}>/</b> Front-end Developer<br/> <b style={{ color: '#f0ab00' }}>・</b>PT Walden Global Services</text><br/>
                                 </div>
                             </div>
                         </Col>

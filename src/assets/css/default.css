@@ -8,7 +8,6 @@
 .footer {
     text-align: center;
     font-size: 12px;
-    margin: 15px;
 }
 
 .layout {
@@ -60,7 +59,7 @@
 }
 
 .card {
-    width : 90%;
+    width : 100%;
     height : 100%;
     border-radius: 5px;
     padding: 4%;
@@ -69,9 +68,7 @@
 
 .center-pos {
     float: inherit;
-    top: 50%;
-    left: 50%;
-    transform: translate(5%, 0%);
+    transform: translate(0%, 0%);
     font-family: 'Open Sans';
 }
 
@@ -94,4 +91,17 @@
   
   .ant-carousel .slick-slide h3 {
     color: #fff;
+  }
+
+  .project-name {
+      margin-top: 4%;
+  }
+
+  .career-edu-div {
+      margin-top: 3%;
+      margin-bottom: 3%;
+  }
+
+  .socmed {
+      margin: 0% 2.5%;
   }
