@@ -7,10 +7,10 @@ export default class Bio extends Component {
         return (
             <Fragment>
                 <Row style={{ margin: 'auto', width: '52%', paddingBottom: '5%' }}>
-                    <Col md={5} >
+                    <Col md={5} style={{ display: 'block' }}>
                         <img src={bg} className='bg-img' alt={'Muhamad Zaky'} />
                     </Col>
-                    <Col md={7} style={{ padding: '0px !important' }} >
+                    <Col md={7} style={{ display: 'block' }} >
                         <Row>
                             <Col className='hi'>
                                 <text>Hi.</text>
