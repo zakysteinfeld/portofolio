@@ -33,7 +33,7 @@ export default class EduCareer extends Component {
                                     <Divider />
                                 </div>
                                 <div>
-                                    <text><b>2016</b> <b style={{ color: '#007bff' }}>/</b><b style={{ color: '#f0ab00' }}>/</b> Web Developer Intern.<br/> <b style={{ color: '#f0ab00' }}>・</b>PT Bandung International Aviation</text><br/>
+                                    <text><b>2016</b> <b style={{ color: '#007bff' }}>/</b><b style={{ color: '#f0ab00' }}>/</b> Intern. Web Developer<br/> <b style={{ color: '#f0ab00' }}>・</b>PT Bandung International Aviation</text><br/>
                                     <text><b>2017 - Present</b> <b style={{ color: '#007bff' }}>/</b><b style={{ color: '#f0ab00' }}>/</b> .NET Developer<br/> <b style={{ color: '#f0ab00' }}>・</b>PT Walden Global Services</text><br/>
                                     <text><b>2019 - Present</b> <b style={{ color: '#007bff' }}>/</b><b style={{ color: '#f0ab00' }}>/</b> Front-end Developer<br/> <b style={{ color: '#f0ab00' }}>・</b>PT Walden Global Services</text><br/>
                                 </div>

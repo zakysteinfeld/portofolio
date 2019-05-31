@@ -51,7 +51,7 @@ class Footer extends Component {
                         </div>
                         <div style={{ margin: 'auto', width: '65%', padding: '1% 0% 2%' }}>
                             <span>Copyright © 2019 </span>
-                            <span> ・ v1.0.2 Develop by Muhamad Zaky </span>
+                            <span> ・ v1.0.3 Develop by Muhamad Zaky </span>
                         </div>
                     </div>
                 </footer>
