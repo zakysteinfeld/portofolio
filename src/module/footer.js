@@ -25,7 +25,7 @@ class Footer extends Component {
                     <div className='footer'>
                         <div style={{ margin: 'auto', width: '65%', padding: '4% 0% 1%'}}>
                             <p>
-                                <text style={{ fontSize: '18px' }}>Contact me on: </text>
+                                <text style={{ fontSize: '18px' }}>Reach me at: </text>
                                 <a className='socmed' href='https://twitter.com/zakysteinfeld' style={{ color: 'black' }}><Icon type='twitter' style={{ fontSize: '25px', color: 'black' }} /></a>
                                 <a className='socmed' href='https://instagram.com/zakysteinfeld' style={{ color: 'black' }}><Icon type='instagram' style={{ fontSize: '25px', color: 'black' }} /></a>
                                 <a className='socmed' href='https://www.linkedin.com/in/muhamadzaky/' style={{ color: 'black' }}><Icon type='linkedin' style={{ fontSize: '25px', color: 'black' }} /></a>
@@ -51,7 +51,7 @@ class Footer extends Component {
                         </div>
                         <div style={{ margin: 'auto', width: '65%', padding: '1% 0% 2%' }}>
                             <span>Copyright © 2019 </span>
-                            <span> ・ v1.0.3 Develop by Muhamad Zaky </span>
+                            <span> ・ v1.0.4 Develop by Muhamad Zaky </span>
                         </div>
                     </div>
                 </footer>

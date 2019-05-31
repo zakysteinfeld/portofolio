@@ -12,7 +12,7 @@ export const ModalInfo = (item) => {
                 <p className='modal-text'>
                   <text><b>Technologies</b></text><br/>
                   <text><b>Front-end</b>: ReactJS, JQuery, ChartJS, Redux, Bootstrap</text><br/>
-                  <text><b>Back-end</b>: .NET 4.5, Rest API, NPOI, PetaPoco</text><br/>
+                  <text><b>Back-end</b>: .NET 4.5, Rest API, NPOI, PetaPoco, Crystal Report</text><br/>
                   <text><b>Database</b>: SQL Server 2018</text>
                 </p>
               </div>

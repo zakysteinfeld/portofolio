@@ -14,7 +14,7 @@ export default class Interest extends Component {
             <Fragment>
                 <div className='shadow-layout' style={{ backgroundColor: '#ea4335', paddingTop: '4%' }}>
                     <div className='about-me'>
-                        <text>Interest</text>
+                        <text>Interests</text>
                     </div>
                     <div className='center-pos' style={{ width: '60%', margin: 'auto', paddingBottom: '4%', marginTop: '3%' }}>
                                 <MDBContainer className='shadow'>
@@ -22,7 +22,7 @@ export default class Interest extends Component {
                                         activeItem={1}
                                         length={4}
                                         showControls={true}
-                                        showIndicators={true}
+                                        showIndicators={false}
                                         className='z-depth-1'
                                         >
                                         <MDBCarouselInner>
