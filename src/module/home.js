@@ -5,6 +5,7 @@ import Interest from './interest';
 import Project from './project';
 
 class Home extends Component {
+
     render() {
         return(
             <Fragment>

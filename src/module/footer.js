@@ -16,6 +16,9 @@ class Footer extends Component {
                             <a className='socmed' href='mailto:zakysteinfeld@outlook.com' style={{ color: 'black' }}><Icon type='mail' style={{ fontSize: '30px', color: 'black' }} /> zakysteinfeld@outlook.com</a>
                         </p>
                     </div>
+                    <div style={{ float: 'right' }}>
+                        <span>v1.0.0 </span>
+                    </div>
                     <div style={{ margin: '1% 0%'}}>
                         <span>Copyright © 2019 </span>
                         <span>Muhamad Zaky</span>
