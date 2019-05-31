@@ -54,6 +54,23 @@ export const ModalInfo = (item) => {
           })
         )
       break;
+    case 4:
+        return(
+          Modal.info({
+            title: 'Flight Board',
+            content: (
+              <div>
+                <p className='modal-text'>
+                  <text><b>Technologies</b></text><br/>
+                  <text><b>App</b>: HTML, JQuery, Code Igniter, Bootstrap</text><br/>
+                  <text><b>Database</b>: My SQL</text><br/>
+                </p>
+              </div>
+            ),
+            onOk() {},
+          })
+        )
+      break;
       default: return(null)
       break;
   }

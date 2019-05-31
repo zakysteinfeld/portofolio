@@ -12,13 +12,11 @@ export default class Interest extends Component {
     render() {
         return(
             <Fragment>
-                <div className='shadow' style={{ backgroundColor: '#ea4335', paddingTop: '4%' }}>
+                <div className='shadow-layout' style={{ backgroundColor: '#ea4335', paddingTop: '4%' }}>
                     <div className='about-me'>
                         <text>Interest</text>
                     </div>
-                    <div style={{ marginTop: '3%' }}>
-                        <Row className='center-pos' style={{ width: '60%', margin: 'auto', paddingBottom: '4%' }}>
-                            <Col>
+                    <div className='center-pos' style={{ width: '60%', margin: 'auto', paddingBottom: '4%', marginTop: '3%' }}>
                                 <MDBContainer className='shadow'>
                                     <MDBCarousel
                                         activeItem={1}
@@ -87,8 +85,6 @@ export default class Interest extends Component {
                                         </MDBCarouselInner>
                                     </MDBCarousel>
                                 </MDBContainer>
-                            </Col>
-                        </Row>
                     </div>
                 </div>
                 <div style={{ margin: '0.5%' }}>

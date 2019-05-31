@@ -16,13 +16,11 @@ class App extends Component {
       <Layout>
         <Content>
           <div className='layout shadow-layout'>
-              <Head />
-              <Bio />
+            <Head />
+            <Bio />
           </div>
           <Home />
-          <Footer>
-            <Foot />
-          </Footer>
+          <Foot />
         </Content>
       </Layout>
     );
