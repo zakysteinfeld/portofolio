@@ -26,9 +26,9 @@ class Footer extends Component {
                         <div style={{ margin: 'auto', width: '65%', padding: '4% 0% 1%'}}>
                             <p>
                                 <text style={{ fontSize: '18px' }}>Reach me at: </text>
-                                <a className='socmed' href='https://twitter.com/zakysteinfeld' style={{ color: 'black' }}><Icon type='twitter' style={{ fontSize: '25px', color: 'black' }} /></a>
-                                <a className='socmed' href='https://instagram.com/zakysteinfeld' style={{ color: 'black' }}><Icon type='instagram' style={{ fontSize: '25px', color: 'black' }} /></a>
-                                <a className='socmed' href='https://www.linkedin.com/in/muhamadzaky/' style={{ color: 'black' }}><Icon type='linkedin' style={{ fontSize: '25px', color: 'black' }} /></a>
+                                <a className='socmed' href='https://twitter.com/zakysteinfeld' target='_blank' style={{ color: 'black' }}><Icon type='twitter' style={{ fontSize: '25px', color: 'black' }} /></a>
+                                <a className='socmed' href='https://instagram.com/zakysteinfeld' target='_blank' style={{ color: 'black' }}><Icon type='instagram' style={{ fontSize: '25px', color: 'black' }} /></a>
+                                <a className='socmed' href='https://www.linkedin.com/in/muhamadzaky/' target='_blank' style={{ color: 'black' }}><Icon type='linkedin' style={{ fontSize: '25px', color: 'black' }} /></a>
                             </p>
                         </div>
                         <div style={{ margin: 'auto', width: '65%', padding: '0% 0% 0%'}}>
@@ -73,7 +73,7 @@ class Footer extends Component {
                     </p>
                     <p style={{ textAlign: 'justify' }}>&nbsp;&nbsp;&nbsp;Thank you for visiting my portofolio! Maybe you are interested in me? Just contact me via my social media or email. <br/> Thank you once again. Cheers!</p>
                     <p><b>Regards, Muhamad Zaky</b></p>
-                    <p style={{ position: 'absolute', bottom: '0' }}>App Version: 1.0.7</p>
+                    <p style={{ position: 'absolute', bottom: '0' }}>App Version: 1.4.7</p>
                 </Drawer>
             </Fragment>
         );
