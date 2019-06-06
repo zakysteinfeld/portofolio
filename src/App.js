@@ -4,6 +4,7 @@ import Bio from './module/bio';
 import Head from './module/header';
 import Foot from './module/footer';
 import { Layout } from 'antd';
+import Fade from 'react-reveal/Fade';
 import './App.css';
 import './assets/css/default.css';
 
@@ -15,10 +16,12 @@ class App extends Component {
     return (
       <Layout>
         <Content>
-          <div className='layout shadow-layout'>
-            <Head />
-            <Bio />
-          </div>
+          <Fade bottom>
+            <div className='layout shadow-layout'>
+              <Head />
+              <Bio />
+            </div>
+          </Fade>
           <Home />
           <Foot />
         </Content>

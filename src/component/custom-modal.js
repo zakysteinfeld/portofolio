@@ -151,7 +151,7 @@ export const ModalInfo = (item) => {
             content: (
               <div>
                 <p className='modal-text'>
-                <text style={{ textAlign: 'justify' }}><b>Descriptions</b>: <br/>Flight Board is a Flight Operation Management System, addressed to aviation school in Bandung.<br/>
+                <text style={{ textAlign: 'justify' }}><b>Descriptions</b>: <br/>Flightboard was purposely made to manage BIA's Flight Management for Cadets that are still on training.<br/>
                   <b>Features</b>: <br/>
                   <Row>
                     <Col xs={1} sm={1} xs={1} sm={1} md={1} lg={1} xl={1} xxs={1} lg={1} xl={1}>
