@@ -47,6 +47,9 @@ export default class EduCareer extends Component {
                         </Col>
                     </Row>
                 </div>
+                <div style={{ padding: '1% 1%', textAlign: 'right' }}>
+                    <text style={{ color: 'white' }}><b>*click card to see detail</b></text>
+                </div>
             </div>
         );
     }

@@ -21,7 +21,7 @@
 .bg-img {
     margin: auto;
     height: 400px;
-    border-radius: 2px;
+    border-radius: 15px;
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
 }
 
@@ -33,6 +33,7 @@
     letter-spacing: 5px;
     padding: 7px;
     border: 1px solid rgb(0, 26, 46);
+    border-radius: 15px;
     display: block;
     text-align: center;
     background: rgb(0, 26, 46);
@@ -65,9 +66,8 @@
 .card {
     width : 100%;
     height : 100%;
-    border-radius: 5px;
+    border-radius: 15px;
     padding: 4%;
-    background-color: white;
 }
 
 .card-projects {
@@ -81,12 +81,12 @@
 }
 
 .shadow {
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3) !important;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3) !important;
     transition: 0.3s;
 }
 
 .shadow:hover {
-    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.3) !important;
+    box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.3) !important;
 }
 
 .shadow-layout {
@@ -126,4 +126,16 @@
 
   .modal-text {
       font-family: 'Open Sans';
+  }
+
+  /* .carousel-inner {
+      border-radius: 15px !important;
+  } */
+
+  .ant-modal-content {
+    border-radius: 15px !important;
+  }
+
+  .ant-btn {
+    border-radius: 15px !important;
   }
