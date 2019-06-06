@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'reactstrap';
-import { Popover } from 'antd';
 import Divider from '@material-ui/core/Divider';
 import { ModalInfo } from './../component/custom-modal';
 import Img1 from './../assets/img/Astra-International.png';

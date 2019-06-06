@@ -1,6 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import { Row, Col } from 'reactstrap';
-import { MDBCarousel, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem, MDBView, MDBMask, MDBContainer } from 'mdbreact';
+import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBView, MDBMask, MDBContainer } from 'mdbreact';
 import ScrollUpButton from "react-scroll-up-button";
 import CustomScrollTop from './custom-scroll-top';
 import Img1 from './../assets/img/madden19.jpg';
@@ -35,10 +34,6 @@ export default class Interest extends Component {
                                                     />
                                                     <MDBMask overlay='black-light' />
                                                 </MDBView>
-                                                {/* <MDBCarouselCaption>
-                                                    <h3 className='h3-responsive'>Games</h3>
-                                                    <p>Madden NFL 19</p>
-                                                </MDBCarouselCaption> */}
                                             </MDBCarouselItem>
                                             <MDBCarouselItem itemId='2'>
                                                 <MDBView>
@@ -49,10 +44,6 @@ export default class Interest extends Component {
                                                     />
                                                     <MDBMask overlay='black-strong' />
                                                 </MDBView>
-                                                {/* <MDBCarouselCaption>
-                                                    <h3 className='h3-responsive' style={{ color: 'black' }}>Sport</h3>
-                                                    <p style={{ color: 'black' }}>Flag Football</p>
-                                                </MDBCarouselCaption> */}
                                             </MDBCarouselItem>
                                             <MDBCarouselItem itemId='3'>
                                                 <MDBView>
@@ -63,10 +54,6 @@ export default class Interest extends Component {
                                                     />
                                                     <MDBMask overlay='black-slight' />
                                                 </MDBView>
-                                                {/* <MDBCarouselCaption>
-                                                    <h3 className='h3-responsive'>Japanese Idol</h3>
-                                                    <p>AKB48</p>
-                                                </MDBCarouselCaption> */}
                                             </MDBCarouselItem>
                                             <MDBCarouselItem itemId='4'>
                                                 <MDBView>
@@ -77,10 +64,6 @@ export default class Interest extends Component {
                                                     />
                                                     <MDBMask overlay='black-slight' />
                                                 </MDBView>
-                                                {/* <MDBCarouselCaption>
-                                                    <h3 className='h3-responsive' style={{ color: 'black' }}>Music</h3>
-                                                    <p style={{ color: 'black' }}>Apple Music</p>
-                                                </MDBCarouselCaption> */}
                                             </MDBCarouselItem>
                                         </MDBCarouselInner>
                                     </MDBCarousel>

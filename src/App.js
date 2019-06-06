@@ -10,7 +10,7 @@ import './assets/css/default.css';
 class App extends Component {
 
   render() {
-    const { Header, Footer, Content } = Layout;
+    const { Content } = Layout;
 
     return (
       <Layout>
