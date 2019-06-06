@@ -7,7 +7,7 @@ import Img2 from './../assets/img/Boga-Group.png';
 import Img3 from './../assets/img/Anabatic.png';
 import Img4 from './../assets/img/bia.png';
 
-export default class EduCareer extends Component {
+export default class Projects extends Component {
     render() {
         return(
             <div className='shadow-layout' style={{ backgroundColor: '#f9ab00', paddingTop: '4%', margin: 'auto', alignContent: 'center' }} >

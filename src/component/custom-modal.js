@@ -14,34 +14,34 @@ export const ModalInfo = (item) => {
                   <text style={{ textAlign: 'justify' }}><b>Descriptions</b>: <br/>Portal AHASS is an ERP application that deserve user with some of chart reports on the dasboard page.<br/>
                   <b>Features</b>: <br/>
                   <Row>
-                    <Col md={1}>
+                    <Col xs={1} sm={1} md={1} lg={1} xl={1} xxs={1}>
                       ・
                     </Col>
-                    <Col md={23}>
+                    <Col xs={23} sm={23} md={23} lg={23} xl={23} xxs={23}>
                       view report in chart display per-dealer/district/region with date filter
                     </Col>
                   </Row>
                   <Row>
-                    <Col md={1}>
+                    <Col xs={1} sm={1} md={1} lg={1} xl={1} xxs={1}>
                       ・
                     </Col>
-                    <Col md={23}>
+                    <Col xs={23} sm={23} md={23} lg={23} xl={23} xxs={23}>
                       view report in table display per-dealer/district/region with date filter
                     </Col>
                   </Row>
                   <Row>
-                    <Col md={1}>
+                    <Col xs={1} sm={1} md={1} lg={1} xl={1} xxs={1}>
                       ・
                     </Col>
-                    <Col md={23}>
+                    <Col xs={23} sm={23} md={23} lg={23} xl={23} xxs={23}>
                       download report data per-dealer/district/region with date filter
                     </Col>
                   </Row>
                   <Row>
-                    <Col md={1}>
+                    <Col xs={1} sm={1} md={1} lg={1} xl={1} xxs={1}>
                       ・
                     </Col>
-                    <Col md={23}>
+                    <Col xs={23} sm={23} md={23} lg={23} xl={23} xxs={23}>
                       single sign on login
                     </Col>
                   </Row>
@@ -67,26 +67,26 @@ export const ModalInfo = (item) => {
                 <text style={{ textAlign: 'justify' }}><b>Descriptions</b>: <br/>Boga Royalty Apps is a royalty application that give coupon\promo code for customer on restaurant under Boga Group.<br/>
                   <b>Features</b>: <br/>
                   <Row>
-                    <Col md={1}>
+                    <Col xs={1} sm={1} md={1} lg={1} xl={1} xxs={1}>
                       ・
                     </Col>
-                    <Col md={23}>
+                    <Col xs={23} sm={23} md={23} lg={23} xl={23} xxs={23}>
                       middle-ware from PoS to Boga wordpress application
                     </Col>
                   </Row>
                   <Row>
-                    <Col md={1}>
+                    <Col xs={1} sm={1} md={1} lg={1} xl={1} xxs={1}>
                       ・
                     </Col>
-                    <Col md={23}>
+                    <Col xs={23} sm={23} md={23} lg={23} xl={23} xxs={23}>
                       set table when customer reserve menu (manual or using qr code)
                     </Col>
                   </Row>
                   <Row>
-                    <Col md={1}>
+                    <Col xs={1} sm={1} md={1} lg={1} xl={1} xxs={1}>
                       ・
                     </Col>
-                    <Col md={23}>
+                    <Col xs={23} sm={23} md={23} lg={23} xl={23} xxs={23}>
                       download customer order history with status and date parameter
                     </Col>
                   </Row>
@@ -111,26 +111,26 @@ export const ModalInfo = (item) => {
                 <text style={{ textAlign: 'justify' }}><b>Descriptions</b>: <br/> -<br/>
                   <b>Features</b>: <br/>
                   {/* <Row style={{ textAlign: 'justify' }}>
-                    <Col md={1}>
+                    <Col xs={1} sm={1} md={1} lg={1} xl={1} xxs={1}>
                       ・
                     </Col>
-                    <Col md={23}>
+                    <Col xs={23} sm={23} md={23} lg={23} xl={23} xxs={23}>
                       middle-ware from PoS to Boga wordpress application
                     </Col>
                   </Row>
                   <Row>
-                    <Col md={1}>
+                    <Col xs={1} sm={1} md={1} lg={1} xl={1} xxs={1}>
                       ・
                     </Col>
-                    <Col md={23}>
+                    <Col xs={23} sm={23} md={23} lg={23} xl={23} xxs={23}>
                       set table when customer reserve menu (manual or using qr code)
                     </Col>
                   </Row>
                   <Row>
-                    <Col md={1}>
+                    <Col xs={1} sm={1} md={1} lg={1} xl={1} xxs={1}>
                       ・
                     </Col>
-                    <Col md={23}>
+                    <Col xs={23} sm={23} md={23} lg={23} xl={23} xxs={23}>
                       download customer order history with status and date parameter
                     </Col>
                   </Row> */} -
@@ -154,34 +154,34 @@ export const ModalInfo = (item) => {
                 <text style={{ textAlign: 'justify' }}><b>Descriptions</b>: <br/>Flight Board is a Flight Operation Management System, addressed to aviation school in Bandung.<br/>
                   <b>Features</b>: <br/>
                   <Row>
-                    <Col md={1}>
+                    <Col xs={1} sm={1} xs={1} sm={1} md={1} lg={1} xl={1} xxs={1} lg={1} xl={1}>
                       ・
                     </Col>
-                    <Col md={23}>
+                    <Col xs={23} sm={23} md={23} lg={23} xl={23} xxs={23}>
                       Login
                     </Col>
                   </Row>
                   <Row>
-                    <Col md={1}>
+                    <Col xs={1} sm={1} md={1} lg={1} xl={1} xxs={1}>
                       ・
                     </Col>
-                    <Col md={23}>
+                    <Col xs={23} sm={23} md={23} lg={23} xl={23} xxs={23}>
                       CRUD for Cadet, Instructure, Plane, Cadet Lesson
                     </Col>
                   </Row>
                   <Row>
-                    <Col md={1}>
+                    <Col xs={1} sm={1} md={1} lg={1} xl={1} xxs={1}>
                       ・
                     </Col>
-                    <Col md={23}>
+                    <Col xs={23} sm={23} md={23} lg={23} xl={23} xxs={23}>
                       set Cadet lesson progression
                     </Col>
                   </Row>
                   <Row>
-                    <Col md={1}>
+                    <Col xs={1} sm={1} md={1} lg={1} xl={1} xxs={1}>
                       ・
                     </Col>
-                    <Col md={23}>
+                    <Col xs={23} sm={23} md={23} lg={23} xl={23} xxs={23}>
                       set plane service operation time
                     </Col>
                   </Row>
