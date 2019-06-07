@@ -13,6 +13,7 @@ export default class Interest extends Component {
         return(
             <Fragment>
                 <div className='shadow-layout' style={{ backgroundColor: '#ea4335', paddingTop: '4%' }}>
+                    <Fade bottom>
                         <div className='about-me'>
                             <text>Interests</text>
                         </div>
