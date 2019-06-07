@@ -13,9 +13,10 @@ export default class Interest extends Component {
         return(
             <Fragment>
                 <div className='shadow-layout' style={{ backgroundColor: '#ea4335', paddingTop: '4%' }}>
-                    <div className='about-me'>
-                        <text>Interests</text>
-                    </div>
+                        <div className='about-me'>
+                            <text>Interests</text>
+                        </div>
+                    </Fade>
                     <div className='center-pos' style={{ width: '60%', margin: 'auto', paddingBottom: '4%', marginTop: '3%' }}>
                         <Fade bottom>
                             <MDBContainer className='shadow'>

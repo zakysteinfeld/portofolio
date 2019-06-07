@@ -73,7 +73,7 @@ class Footer extends Component {
                     </p>
                     <p style={{ textAlign: 'justify' }}>&nbsp;&nbsp;&nbsp;Thank you for visiting my portofolio! Maybe you are interested in me? Just contact me via my social media or email. <br/> Thank you once again. Cheers!</p>
                     <p><b>Regards, Muhamad Zaky</b></p>
-                    <p style={{ position: 'absolute', bottom: '0' }}>App Version: 1.4.8</p>
+                    <p style={{ position: 'absolute', bottom: '0' }}>App Version: 1.4.9</p>
                 </Drawer>
             </Fragment>
         );
