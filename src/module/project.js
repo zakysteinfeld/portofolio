@@ -11,7 +11,7 @@ import Img4 from './../assets/img/bia.png';
 export default class Projects extends Component {
     render() {
         return(
-            <div className='shadow-layout' style={{ backgroundColor: '#f9ab00', paddingTop: '4%', margin: 'auto', alignContent: 'center' }} >
+            <div style={{ backgroundColor: '#ffffff', paddingTop: '4%', margin: 'auto', alignContent: 'center' }} >
                 <div className='about-me'>
                     <text>Projects</text>
                 </div>

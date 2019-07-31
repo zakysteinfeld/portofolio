@@ -5,7 +5,7 @@ import Fade from 'react-reveal/Fade';
 export default class AboutMe extends Component {
     render() {
         return(
-            <div style={{ backgroundColor: '#007bff', paddingTop: '4%' }}>
+            <div style={{ backgroundColor: '#ffffff', paddingTop: '4%' }}>
                 <Fade bottom>
                     <div className='about-me'>
                         <text>About me</text>

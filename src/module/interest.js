@@ -7,12 +7,13 @@ import Img1 from './../assets/img/madden19.jpg';
 import Img2 from './../assets/img/flagfootball.jpg';
 import Img3 from './../assets/img/jiwarudays.jpg';
 import Img4 from './../assets/img/applemusic.png';
+import Img5 from './../assets/img/singout.jpg';
 
 export default class Interest extends Component {
     render() {
         return(
             <Fragment>
-                <div className='shadow-layout' style={{ backgroundColor: '#ea4335', paddingTop: '4%' }}>
+                <div style={{ backgroundColor: '#ffffff', paddingTop: '4%' }}>
                     <Fade bottom>
                         <div className='about-me'>
                             <text>Interests</text>
@@ -23,7 +24,7 @@ export default class Interest extends Component {
                             <MDBContainer className='shadow'>
                                 <MDBCarousel
                                     activeItem={1}
-                                    length={4}
+                                    length={5}
                                     showControls={true}
                                     showIndicators={false}
                                     className='z-depth-1'
@@ -60,6 +61,16 @@ export default class Interest extends Component {
                                             </MDBView>
                                         </MDBCarouselItem>
                                         <MDBCarouselItem itemId='4'>
+                                            <MDBView>
+                                                <img
+                                                className='d-block w-100'
+                                                src={Img5}
+                                                alt='乃木坂46 23th Single 「Sing Out!」'
+                                                />
+                                                <MDBMask overlay='black-slight' />
+                                            </MDBView>
+                                        </MDBCarouselItem>
+                                        <MDBCarouselItem itemId='5'>
                                             <MDBView>
                                                 <img
                                                 className='d-block w-100'

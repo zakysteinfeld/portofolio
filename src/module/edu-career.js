@@ -6,7 +6,7 @@ import Divider from '@material-ui/core/Divider';
 export default class EduCareer extends Component {
     render() {
         return(
-            <div className='shadow-layout' style={{ backgroundColor: '#50b46b', paddingTop: '4%' }}>
+            <div style={{ backgroundColor: '#ffffff', paddingTop: '4%' }}>
                 <Fade bottom>
                     <div className='about-me'>
                         <text>Education & Career</text>

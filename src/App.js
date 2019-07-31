@@ -17,7 +17,8 @@ class App extends Component {
       <Layout>
         <Content>
           <Fade bottom>
-            <div className='layout shadow-layout'>
+            {/* <div className='layout shadow-layout'> */}
+            <div className='layout'>
               <Head />
               <Bio />
             </div>
