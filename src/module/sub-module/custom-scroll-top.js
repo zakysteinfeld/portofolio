@@ -5,7 +5,7 @@ export default class CustomScrollTop extends Component {
     render() {
         return(
             <div style={{ float: 'right' }}>
-                <a style={{ fontSize: '15px' }}><b>Back to top</b> <Icon type='arrow-up' style={{ fontSize: '15px', color: 'black' }} /></a>
+                <a className='backtotop'><b>Back to top</b> <Icon type='arrow-up' /></a>
             </div>
         );
     }

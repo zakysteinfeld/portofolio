@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Flight Board",
+        "year": "2016",
+        "image": "bia",
+        "client": "PT Bandung International Aviation",
+        "desc": "",
+        "tech": ""
+    },
+    {
+        "name": "Portal AHASS",
+        "year": "2018",
+        "image": "ai",
+        "client": "PT Astra International Tbk",
+        "desc": "",
+        "tech": ""
+    },
+    {
+        "name": "Boga Loyalty Apps",
+        "year": "2018",
+        "image": "boga",
+        "client": "Boga Group",
+        "desc": "",
+        "tech": ""
+    },
+    {
+        "name": "Pocketbank-Merchant",
+        "year": "2019",
+        "image": "anabatic",
+        "client": "PT Anabatic Technologies Tbk",
+        "desc": "",
+        "tech": ""
+    }
+]

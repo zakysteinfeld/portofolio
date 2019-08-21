@@ -1,84 +1,35 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
+import { Icon, Row } from 'antd';
 import Divider from '@material-ui/core/Divider';
-import { Icon, Drawer } from 'antd';
-import { Row, Col } from 'reactstrap';
 
-class Footer extends Component {
-    state = { visible: false };
-
-  showDrawer = () => {
-    this.setState({
-      visible: true,
-    });
-  };
-
-  onClose = () => {
-    this.setState({
-      visible: false,
-    });
-  };
-
+export default class Footer extends Component {
     render() {
         return(
-            <Fragment>
-                <footer>
-                    <div className='footer'>
-                        <div style={{ margin: 'auto', width: '65%', padding: '4% 0% 1%'}}>
-                            <p>
-                                <text style={{ fontSize: '18px' }}>Reach me at: </text>
-                                <a className='socmed' href='https://twitter.com/zakysteinfeld' target='_blank' style={{ color: 'black' }}><Icon type='twitter' style={{ fontSize: '25px', color: 'black' }} /></a>
-                                <a className='socmed' href='https://instagram.com/zakysteinfeld' target='_blank' style={{ color: 'black' }}><Icon type='instagram' style={{ fontSize: '25px', color: 'black' }} /></a>
-                                <a className='socmed' href='https://www.linkedin.com/in/muhamadzaky/' target='_blank' style={{ color: 'black' }}><Icon type='linkedin' style={{ fontSize: '25px', color: 'black' }} /></a>
-                            </p>
-                        </div>
-                        <div style={{ margin: 'auto', width: '65%', padding: '0% 0% 0%'}}>
-                            <Divider />
-                        </div>
-                        <div style={{ margin: 'auto', width: '65%', padding: '2% 0% 0%'}}>
-                            <p>
-                                <Row>
-                                    <Col md={3}>
-                                        <a className='socmed' href='mailto:zakysteinfeld@outlook.com' style={{ color: 'black', fontSize: '15px' }}><b>Send me email</b></a>
-                                    </Col>
-                                    <Col md={3}>
-                                        <a className='socmed' style={{ fontSize: '15px' }} onClick={ () => this.showDrawer() }>About App</a>
-                                    </Col>
-                                </Row>
-                            </p>
-                        </div>
-                        <div style={{ margin: 'auto', width: '65%', padding: '1% 0% 0%' }}>
-                            <Divider />
-                        </div>
-                        <div style={{ margin: 'auto', width: '65%', padding: '1% 0% 2%' }}>
-                            <span>Copyright © 2019 </span>
-                            <span> ・ Developed by Muhamad Zaky </span>
-                        </div>
-                    </div>
-                </footer>
-                <Drawer
-                    title="About App"
-                    placement="right"
-                    closable={false}
-                    onClose={this.onClose}
-                    visible={this.state.visible}
-                >
-                    <p style={{ fontSize: '15px', textAlign: 'justify' }}>&nbsp;&nbsp;&nbsp;This is a portofolio website of Muhamad Zaky</p>
-                    <p>
-                        Another dependency in use:  <br/>
-                        ・antd v3.19.1 <br/>
-                        ・bootstrap v4.3.1 <br/>
-                        ・gh-pages v2.0.1 <br/>
-                        ・mdbreact v4.15.0 <br/>
-                        ・react-reveal v1.2.2 <br/>
-                        ・reactstrap v8.0.0 <br/>
+            <div className='footer'>
+                <Row>
+                    <p className='socmed-p'>
+                        <text style={{ fontSize: '15px', paddingRight: '10px' }}>Reach me at: </text>
+                        <a className='socmed' href='https://twitter.com/zakysteinfeld' target='_blank' style={{ color: 'black' }}><Icon type='twitter' style={{ fontSize: '25px', color: 'black' }} /></a>
+                        <a className='socmed' href='https://instagram.com/zakysteinfeld' target='_blank' style={{ color: 'black' }}><Icon type='instagram' style={{ fontSize: '25px', color: 'black' }} /></a>
+                        <a className='socmed' href='https://www.linkedin.com/in/muhamadzaky/' target='_blank' style={{ color: 'black' }}><Icon type='linkedin' style={{ fontSize: '25px', color: 'black' }} /></a>
                     </p>
-                    <p style={{ textAlign: 'justify' }}>&nbsp;&nbsp;&nbsp;Thank you for visiting my portofolio! Maybe you are interested in me? Just contact me via my social media or email. <br/> Thank you once again. Cheers!</p>
-                    <p><b>Regards, Muhamad Zaky</b></p>
-                    <p style={{ position: 'absolute', bottom: '0' }}>App Version: 1.4.11</p>
-                </Drawer>
-            </Fragment>
-        );
-    }
+                </Row>
+                <Row className='devider'>
+                    <Divider />
+                </Row>
+                <Row className='socmed-p'>
+                    <p className='sendmemail-div'>
+                        <a className='sendmemail' href='mailto:zakysteinfeld@outlook.com'>Send me email!</a>
+                    </p>
+                </Row>
+                <Row className='devider'>
+                    <Divider />
+                </Row>
+                <Row className='socmed-p cpr'>
+                    <span>Copyright © 2019 </span>
+                    <span> ・ Developed by Muhamad Zaky </span>
+                </Row>
+            </div>
+        )
+    }   
 }
-
-export default Footer;

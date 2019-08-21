@@ -1,20 +1,29 @@
 import React, { Component, Fragment } from 'react';
-import AboutMe from './about-me';
-import EduCareer from './edu-career';
-import Interest from './interest';
-import Project from './project';
+import Intro from './sub-module/intro';
+import Projects from './sub-module/project';
+import Footer from './footer';
+import ScrollToTop from './sub-module/custom-scroll-top';
+import ScrollUpButton from 'react-scroll-up-button';
 
 class Home extends Component {
+    scrollTop = () => {
+        window.scrollTo({y: 0, x: 0, smooth: true});
+    }
 
     render() {
         return(
             <Fragment>
-                {/* <div style={{ marginTop: '20px', backgroundColor: '#ecf0f1' }}> */}
+                <div className='app-div'>
+                    <Intro />
+                    <Projects />
+                </div>
                 <div>
-                    <AboutMe />
-                    <EduCareer />
-                    <Project />
-                    <Interest />
+                    <ScrollUpButton>
+                        <ScrollToTop func={this.scrollTop} />
+                    </ScrollUpButton>
+                </div>
+                <div>
+                    <Footer />
                 </div>
             </Fragment>
         );

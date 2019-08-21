@@ -1,0 +1,164 @@
+@import '~antd/dist/antd.css';
+@import url('https://fonts.googleapis.com/css?family=Anton|Josefin+Sans:300|Luckiest+Guy|Open+Sans+Condensed:300|Open+Sans|Roboto+Condensed|Lexend+Deca|Roboto|Source+Sans+Pro:400&display=swap');
+
+.app-div {
+    width: 900px;
+    background-color: white;
+    margin: auto;
+}
+
+.intro-div {
+    padding: 45px 0px;
+    height: 100%;
+}
+
+.name-box {
+    font-family: 'Lexend Deca';
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 5px;
+    padding: 7px;
+    border: 1px solid rgb(0, 26, 46);
+    border-radius: 15px;
+    display: block;
+    text-align: center;
+    background: rgb(0, 26, 46);
+    width: 165px;
+    line-height: 1.5em;
+    overflow: hidden;
+}
+
+.intro-content {
+    padding: 50px 0px;
+}
+
+.profile-img-div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.profile-img {
+    width: 330px;
+    border-radius: 15px;
+}
+
+.hi-text-div {
+    margin-top: 20px;
+}
+
+.hi-text {
+    font-family: 'Lexend Deca';
+    color: black;
+    -webkit-text-stroke: 13px black;
+    font-size: 200px;
+}
+
+.intro-text-div {
+    margin-top: -20px;
+}
+
+.intro-text {
+    font-family: 'Lexend Deca';
+    color: black;
+    font-size: 16px;
+    display: inline-block;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.card {
+    width : 280px;
+    height: 238px;
+    border-radius: 15px;
+    padding: 4%;
+    margin: auto;
+    align-content: center;
+    justify-content: center;
+    display: inline-grid;
+}
+
+.ant-card {
+    width: 280px !important;
+}
+
+.card-img {
+    width : 220px;
+    vertical-align: middle;
+}
+
+.project-div {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 11px 0px;
+}
+
+.project-text-div {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-content: center;
+}
+
+.project-text {
+    font-family: 'Lexend Deca';
+    color: black;
+    font-size: 40px;
+    text-align: justify;
+}
+
+.footer {
+    margin-top: 30px;
+    padding-top: 30px;
+    font-family: 'Lexend Deca';
+    background-color: #fafafa;
+}
+
+.socmed-p {
+    padding: 0px 242px;
+    display: flex;
+}
+
+.socmed {
+    padding: 0px 5px;
+}
+
+.devider {
+    padding: 0px 242px;
+}
+
+.sendmemail-div {
+    padding: 25px 0px;
+}
+
+.sendmemail {
+    color: black;
+    font-size: 16px;
+}
+
+.sendmemail:hover {
+    color: black;
+    font-size: 16px;
+}
+
+.cpr {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.backtotop {
+    padding: 0px 15px;
+    color: black;
+    font-size: 15px;
+    font-family: 'Lexend Deca';
+}
+
+.backtotop:hover {
+    padding: 0px 15px;
+    color: black;
+    font-size: 15px;
+    font-family: 'Lexend Deca';
+}
