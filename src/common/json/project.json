@@ -4,24 +4,27 @@
         "year": "2016",
         "image": "bia",
         "client": "PT Bandung International Aviation",
-        "desc": "",
-        "tech": ""
+        "desc": "Flightboard was purposely made to manage BIA's Flight Management for Cadets that are still on training.",
+        "tech": "",
+        "appImg": ""
     },
     {
         "name": "Portal AHASS",
         "year": "2018",
         "image": "ai",
         "client": "PT Astra International Tbk",
-        "desc": "",
-        "tech": ""
+        "desc": "Portal AHASS is an ERP application that deserve user with some of chart reports on the dasboard page.",
+        "tech": "React JS, Chart JS, .NET 4.6, PetaPoco, SQL Server",
+        "appImg": "portalahass.png"
     },
     {
         "name": "Boga Loyalty Apps",
         "year": "2018",
         "image": "boga",
         "client": "Boga Group",
-        "desc": "",
-        "tech": ""
+        "desc": "Boga Royalty Apps is a royalty application that give coupon promo code for customer on restaurant under Boga Group.",
+        "tech": "",
+        "appImg": ""
     },
     {
         "name": "Pocketbank-Merchant",
@@ -29,6 +32,7 @@
         "image": "Anabatic",
         "client": "PT Anabatic Technologies Tbk",
         "desc": "",
-        "tech": ""
+        "tech": "",
+        "appImg": ""
     }
 ]

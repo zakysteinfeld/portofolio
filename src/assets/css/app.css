@@ -162,3 +162,23 @@
     font-size: 15px;
     font-family: 'Lexend Deca';
 }
+
+.button-float {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    right: 20px;
+    bottom: 20px;
+}
+
+.button-float-child {
+    padding-right: 10px;
+}
+
+.font-lexend-deca {
+    font-family: 'Lexend Deca';
+}
+
+.appImg {
+    width: 100%;
+}

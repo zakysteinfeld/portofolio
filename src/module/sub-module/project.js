@@ -1,14 +1,36 @@
 import React, { Component } from 'react';
-import { Row, Col, Card } from 'antd';
+import { Row, Col, Card, Modal, Button } from 'antd';
 import data from './../../common/json/project.json';
 
 export default class Project extends Component {
+    renderModalProjects = () => {
+        const { initialData } = this.props;
+        return (
+            <Modal
+                title={<text className='font-lexend-deca'>{initialData.name}</text>}
+                centered
+                visible={this.props.status}
+                onCancel={() => {
+                    this.props.setToggle(false) 
+                    this.props.removeContent()
+                } }
+                footer={null}
+            >
+                <div className='font-lexend-deca'>
+                    <p>{initialData.desc}</p>
+                    { initialData.appImg !== undefined ? initialData.appImg !== null ? initialData.appImg !== '' ? <img src={require('../../assets/img/' + initialData.appImg)} className='appImg' /> : null : null : null }
+                    <p>{initialData.tech !== undefined ? initialData.tech !== null ? initialData.tech !== '' ? '('+initialData.tech+')' : null : null : null}</p>
+                </div>
+            </Modal>
+        )
+    }
+    
     render() {
         const { Meta } = Card;
-        console.log(data)
+        const { status, setToggle, setContent } = this.props;
 
         return(
-            <div>
+            <div className='font-lexend-deca'>
                 <Row className='project-text-div'>
                     <text className='project-text'>Projects</text>
                 </Row>
@@ -16,7 +38,11 @@ export default class Project extends Component {
                     {
                         data.map(function(response, index) {
                             return (
-                                <Col md={8} className='project-div'>
+                                <Col md={8} className='project-div' 
+                                    onClick={ () => {
+                                        setToggle(true) 
+                                        setContent(response)} 
+                                    }>
                                      <Card
                                         hoverable
                                         style={{ width: 240 }}
@@ -29,6 +55,7 @@ export default class Project extends Component {
                         })
                     }
                 </Row>
+                {this.renderModalProjects()}
             </div>
         )
     }
