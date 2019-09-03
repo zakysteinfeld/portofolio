@@ -1,11 +1,15 @@
 import React, { Component, Fragment } from 'react';
 import { Button } from 'antd';
-import Fade from 'react-reveal/Fade'
+import Fade from 'react-reveal/Fade';
 import Intro from './sub-module/intro';
 import Projects from './sub-module/project';
 import Footer from './footer';
 import ScrollToTop from './sub-module/custom-scroll-top';
 import ScrollUpButton from 'react-scroll-up-button';
+import ActionButton from './sub-module/action-button';
+import ModalInterest from './sub-module/modal-interest';
+import ModalAbout from './sub-module/modal-about';
+import SectionInterest from './sub-module/section-interests';
 
 class Home extends Component {
     state = {
@@ -21,7 +25,9 @@ class Home extends Component {
             }
         ],
         projectModalStatus: false,
-        projectModalContent: {}
+        projectModalContent: {},
+        interestModalStatus: false,
+        aboutModalStatus: false
     }
 
     componentWillMount() {
@@ -45,6 +51,14 @@ class Home extends Component {
     }
 
     render() {
+        const openModalAction = (param) => {
+            if (param === 'Interest') {
+                this.setState({ interestModalStatus: !this.state.interestModalStatus })
+            } else if (param === 'About') {
+                this.setState({ aboutModalStatus: !this.state.aboutModalStatus })
+            }
+        }
+
         return(
             <Fragment>
                 <div className='app-div'>
@@ -54,6 +68,13 @@ class Home extends Component {
                     <Fade bottom>
                         <Projects status={this.state.projectModalStatus} setToggle={this.projectModalToggle} setContent={this.setProjectModalContent} removeContent={this.removeProjectModalContent} initialData={this.state.projectModalContent} />
                     </Fade>
+                    {/* {
+                        this.state.interestModalStatus === true ? 
+                            <Fade bottom>
+                                <SectionInterest />
+                            </Fade>
+                        : null
+                    } */}
                 </div>
                 <div>
                     <ScrollUpButton>
@@ -68,11 +89,7 @@ class Home extends Component {
                         { this.state.showMenuStatus === true ? 
                             this.state.menuFloat.map(function(response, index) {
                                 return (
-                                    <Fade right cascade collapse>
-                                        <div className='button-float-child'>
-                                            <Button type='primary' shape='round' size='large'>{ response.name }</Button>
-                                        </div>
-                                    </Fade>
+                                    <ActionButton key={index} response={response} openModalAction={openModalAction} />
                                 )
                             })
                             : null
@@ -88,6 +105,8 @@ class Home extends Component {
                         }
                     </div>
                 </Fade>
+                <ModalInterest status={this.state.interestModalStatus} toggle={openModalAction} />
+                <ModalAbout status={this.state.aboutModalStatus} toggle={openModalAction} />
             </Fragment>
         );
     }
