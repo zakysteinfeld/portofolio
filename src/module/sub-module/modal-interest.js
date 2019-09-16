@@ -10,10 +10,10 @@ import Img5 from './../../assets/img/singout.jpg';
 
 export default class ModalInterest extends Component {
     render() {
-        const { status, toggle } = this.props;
+        const { status, toggle, lang } = this.props;
         return (
             <Modal
-                title={'Interest'}
+                title={ lang === 'ja' ? '興味' : 'Interest' }
                 centered
                 visible={status}
                 onCancel={() => {

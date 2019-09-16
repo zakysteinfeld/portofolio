@@ -3,10 +3,10 @@ import { Modal } from 'antd';
 
 export default class ModalAbout extends Component {
     render() {
-        const { status, toggle } = this.props;
+        const { status, toggle, lang } = this.props;
         return (
             <Modal
-                title={'About'}
+                title={ lang === 'ja' ? 'について' : 'About'}
                 centered
                 visible={status}
                 onCancel={() => {

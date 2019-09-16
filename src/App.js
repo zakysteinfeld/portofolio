@@ -4,6 +4,7 @@ import Fade from 'react-reveal/Fade';
 import Home from './module/home';
 import './App.css';
 import './assets/css/app.css';
+import $ from 'jquery';
 
 class App extends Component {
 
@@ -13,7 +14,7 @@ class App extends Component {
     return (
       <Layout>
         <Content style={{ backgroundColor: 'white' }}>
-          <Home/>
+          <Home />
         </Content>
       </Layout>
     );

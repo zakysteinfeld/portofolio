@@ -17,21 +17,31 @@ class Home extends Component {
         menuFloat: [
             {
                 name: 'Interest',
+                namejp: '興味',
                 icon: 'plus'
             },
             {
                 name: 'About',
+                namejp: 'について',
                 icon: 'min'
             }
         ],
         projectModalStatus: false,
         projectModalContent: {},
         interestModalStatus: false,
-        aboutModalStatus: false
+        aboutModalStatus: false,
+        ipinfo: {},
+        lang: 'en',
+        langstat: false
     }
 
     componentWillMount() {
         this.setState({ showMenuStatus: false })
+        this.setState({ langstat: false })
+    }
+
+    componentDidMount() {
+        // this.setState({ lang: 'JP', langstat: true })
     }
 
     showMenu = () => {
@@ -50,6 +60,11 @@ class Home extends Component {
         this.setState({ projectModalContent: {} })
     }
 
+    setLang = (lang) => {
+        this.setState({ lang: lang, langstat: true })
+        localStorage.setItem('lang', lang)
+    }
+
     render() {
         const openModalAction = (param) => {
             if (param === 'Interest') {
@@ -59,14 +74,16 @@ class Home extends Component {
             }
         }
 
+        console.log('lang', this.state.lang)
+
         return(
             <Fragment>
                 <div className='app-div'>
                     <Fade bottom>
-                        <Intro />
+                        <Intro initialData={this.state} />
                     </Fade>
                     <Fade bottom>
-                        <Projects status={this.state.projectModalStatus} setToggle={this.projectModalToggle} setContent={this.setProjectModalContent} removeContent={this.removeProjectModalContent} initialData={this.state.projectModalContent} />
+                        <Projects stateData={this.state} status={this.state.projectModalStatus} setToggle={this.projectModalToggle} setContent={this.setProjectModalContent} removeContent={this.removeProjectModalContent} initialData={this.state.projectModalContent} />
                     </Fade>
                     {/* {
                         this.state.interestModalStatus === true ? 
@@ -78,11 +95,11 @@ class Home extends Component {
                 </div>
                 <div>
                     <ScrollUpButton>
-                        <ScrollToTop func={this.scrollTop} />
+                        <ScrollToTop func={this.scrollTop} lang={this.state.lang} />
                     </ScrollUpButton>
                 </div>
                 <div>
-                    <Footer />
+                    <Footer initialData={this.state} setLang={this.setLang} />
                 </div>
                 <Fade>
                     <div className='button-float'>
@@ -96,17 +113,17 @@ class Home extends Component {
                         }
                         { this.state.showMenuStatus === true ?
                             <Fade>
-                                <Button type='primary' shape='circle' icon='close' size='large' onClick={ () => { this.showMenu() } } /> 
+                                <Button type='primary' shape='circle' icon='close' size='large' className='shadow-btn' onClick={ () => { this.showMenu() } } /> 
                             </Fade> 
                             :
                             <Fade>
-                                <Button type='primary' shape='circle' icon='menu' size='large' onClick={ () => { this.showMenu() } } />
+                                <Button type='primary' shape='circle' icon='menu' size='large' className='shadow-btn' onClick={ () => { this.showMenu() } } />
                             </Fade>
                         }
                     </div>
                 </Fade>
-                <ModalInterest status={this.state.interestModalStatus} toggle={openModalAction} />
-                <ModalAbout status={this.state.aboutModalStatus} toggle={openModalAction} />
+                <ModalInterest status={this.state.interestModalStatus} toggle={openModalAction} lang={this.state.lang} />
+                <ModalAbout status={this.state.aboutModalStatus} toggle={openModalAction} lang={this.state.lang} />
             </Fragment>
         );
     }

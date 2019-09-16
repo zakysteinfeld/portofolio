@@ -4,11 +4,12 @@ import ProfilePict from './../../assets/img/pict.jpg';
 
 export default class Bio extends Component {
     render() {
-        return (
+        const { initialData } = this.props;
+        return ( 
             <div className='intro-div'>
                 <Row>
                     <Col className='name-box shadow'>
-                        <text>Muhamad Zaky</text>
+                        <text>{initialData.lang === 'ja' ? 'ムハマド・ザキ' : 'Muhamad Zaky'}</text>
                     </Col>
                 </Row>
                 <Row className='intro-content'>
@@ -16,14 +17,30 @@ export default class Bio extends Component {
                         <img src={ProfilePict} className='profile-img' />
                     </Col>
                     <Col span={11} offset={1}>
-                        <Row className='hi-text-div'>
-                            <text className='hi-text'>Hi.</text>
-                        </Row>
-                        <Row className='intro-text-div'>
-                            <text className='intro-text'>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; My name is <b>Zaky</b>, I'm a Front-end Developer currently, using javascript framework <b>ReactJS</b> with speciality in <b>.NET (C#)</b> on the back.
-                            </text>
-                        </Row>
+                        {
+                            initialData.lang === 'ja' ?
+                                <Fragment>
+                                    <Row className='hi-text-div-jp'>
+                                        <text className='hi-text-jp'>こんにちは！</text>
+                                    </Row>
+                                    <Row className='intro-text-div-jp'>
+                                        <text className='intro-text'>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 私の名前は<b>ざき</b>です私は現在、<b>ReactJS</b> javascriptフレームワークのフロントエンド開発者であり、バックエンドとして<b>.NET（C＃）</b>を専門にしています。
+                                        </text>
+                                    </Row>
+                                </Fragment>
+                                :
+                                <Fragment>
+                                    <Row className='hi-text-div'>
+                                        <text className='hi-text'>Hi.</text>
+                                    </Row>
+                                    <Row className='intro-text-div'>
+                                        <text className='intro-text'>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; My name is <b>Zaky</b>, I'm a Front-end Developer currently, using javascript framework <b>ReactJS</b> with speciality in <b>.NET (C#)</b> on the back.
+                                        </text>
+                                    </Row>
+                                </Fragment>
+                            }
                     </Col>
                 </Row>
             </div>

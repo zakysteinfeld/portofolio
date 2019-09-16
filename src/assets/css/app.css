@@ -19,13 +19,13 @@
     color: #fff;
     font-weight: 400;
     letter-spacing: 5px;
-    padding: 7px;
+    padding: 10px;
     border: 1px solid rgb(0, 26, 46);
     border-radius: 15px;
     display: block;
     text-align: center;
     background: rgb(0, 26, 46);
-    width: 165px;
+    width: fit-content;
     line-height: 1.5em;
     overflow: hidden;
 }
@@ -48,6 +48,10 @@
     margin-top: 20px;
 }
 
+.hi-text-div-jp {
+    margin-top: 135px;
+}
+
 .hi-text {
     font-family: 'Lexend Deca';
     color: black;
@@ -55,8 +59,19 @@
     font-size: 200px;
 }
 
+.hi-text-jp {
+    font-family: 'Lexend Deca';
+    color: black;
+    -webkit-text-stroke: 4px black;
+    font-size: 68px;
+}
+
 .intro-text-div {
-    margin-top: -20px;
+    margin-top: -30px;
+}
+
+.intro-text-div-jp {
+    margin-top: 10px;
 }
 
 .intro-text {
@@ -199,4 +214,18 @@
 .car-img-div {
     display: flex;
     justify-content: center;
+}
+
+.shadow-btn {
+    box-shadow: 0px 0px 10px 0px rgba(24, 144, 255, 0.5);
+}
+
+.pull-left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.pull-right {
+    display: flex;
+    justify-content: flex-end;
 }

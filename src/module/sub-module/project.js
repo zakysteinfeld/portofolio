@@ -27,12 +27,14 @@ export default class Project extends Component {
     
     render() {
         const { Meta } = Card;
-        const { status, setToggle, setContent } = this.props;
+        const { status, setToggle, setContent, initialData, stateData } = this.props;
 
         return(
             <div className='font-lexend-deca'>
                 <Row className='project-text-div'>
-                    <text className='project-text'>Projects</text>
+                    <text className='project-text'>
+                        { stateData.lang === 'ja' ? 'プロジェクス' : 'Projects' }
+                    </text>
                 </Row>
                 <Row>
                     {

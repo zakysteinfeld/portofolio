@@ -31,8 +31,8 @@
         "year": "2019",
         "image": "Anabatic",
         "client": "PT Anabatic Technologies Tbk",
-        "desc": "",
-        "tech": "",
-        "appImg": ""
+        "desc": "PocketBank-Merchant is a merchant apps.",
+        "tech": "React JS, ati-firebase, ati-react-web, antd",
+        "appImg": "pocketbank.png"
     }
 ]
