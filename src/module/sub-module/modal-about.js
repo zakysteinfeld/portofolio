@@ -25,11 +25,11 @@ export default class ModalAbout extends Component {
                     </p>
                     <p style={{ textAlign: 'justify' }}>
                         {
-                            lang === 'ja' ? <Fragment>私のポートフォリオをご覧いただきありがとうございます！たぶんあなたは私に興味がありますか？ソーシャルメディアまたはメールで連絡してください。 <br/>もう一度ありがとう。乾杯！</Fragment> : <Fragment>&nbsp;&nbsp;&nbsp;Thank you for visiting my portofolio! Maybe you are interested in me? Just contact me via my social media or email. <br/> Thank you once again. Cheers!</Fragment>
+                            lang === 'ja' ? <Fragment>&nbsp;&nbsp;&nbsp;私のポートフォリオをご覧いただきありがとうございます！たぶんあなたは私に興味がありますか？ソーシャルメディアまたはメールで連絡してください。 <br/>もう一度ありがとう。乾杯！</Fragment> : <Fragment>&nbsp;&nbsp;&nbsp;Thank you for visiting my portofolio! Maybe you are interested in me? Just contact me via my social media or email. <br/> Thank you once again. Cheers!</Fragment>
                         }
                     </p>
                     <p><b>{ lang === 'ja' ? 'ムハマド・ザキ、よろしくお願いいたします' : 'Regards, Muhamad Zaky' }</b></p>
-                    <p style={{ position: 'absolute', bottom: '0' }}>App Version: 2.4.15</p>
+                    <p style={{ position: 'absolute', bottom: '0' }}>App Version: 2.4.16</p>
                 </div>
             </Modal>
         )
