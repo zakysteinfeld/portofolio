@@ -7,7 +7,9 @@ import './assets/css/app.css';
 import $ from 'jquery';
 
 class App extends Component {
-
+  componentWillMount() {
+    localStorage.setItem('lang', 'en');
+  }
   render() {
     const { Content } = Layout;
 

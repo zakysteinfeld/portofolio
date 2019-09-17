@@ -5,6 +5,7 @@
         "image": "bia",
         "client": "PT Bandung International Aviation",
         "desc": "Flightboard was purposely made to manage BIA's Flight Management for Cadets that are still on training.",
+        "descjp": "Flightboardは、訓練中の士官候補生向けのBIAフライト管理を管理するために意図的に作成されました。",
         "tech": "",
         "appImg": ""
     },
@@ -14,6 +15,7 @@
         "image": "ai",
         "client": "PT Astra International Tbk",
         "desc": "Portal AHASS is an ERP application that deserve user with some of chart reports on the dasboard page.",
+        "descjp": "ポータルAHASSは、ダッシュボードページのチャートレポートの一部でユーザーにふさわしいERPアプリケーションです。",
         "tech": "React JS, Chart JS, .NET 4.6, PetaPoco, SQL Server",
         "appImg": "portalahass.png"
     },
@@ -23,6 +25,7 @@
         "image": "boga",
         "client": "Boga Group",
         "desc": "Boga Royalty Apps is a royalty application that give coupon promo code for customer on restaurant under Boga Group.",
+        "descjp": "Boga Loyalty Appは、Boga Groupのレストランの顧客にクーポンプロモーションコードを提供するロイヤリティアプリケーションです。",
         "tech": "",
         "appImg": ""
     },
@@ -32,6 +35,7 @@
         "image": "Anabatic",
         "client": "PT Anabatic Technologies Tbk",
         "desc": "PocketBank-Merchant is a merchant apps.",
+        "descjp": "PocketBank-Merchantは商人のアプリです。",
         "tech": "React JS, ati-firebase, ati-react-web, antd",
         "appImg": "pocketbank.png"
     }

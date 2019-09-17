@@ -4,7 +4,7 @@ import data from './../../common/json/project.json';
 
 export default class Project extends Component {
     renderModalProjects = () => {
-        const { initialData } = this.props;
+        const { initialData, stateData } = this.props;
         return (
             <Modal
                 title={<text className='font-lexend-deca'>{initialData.name}</text>}
@@ -17,7 +17,7 @@ export default class Project extends Component {
                 footer={null}
             >
                 <div className='font-lexend-deca'>
-                    <p>{initialData.desc}</p>
+                    <p>{ stateData.lang === 'ja' ? initialData.descjp : initialData.desc }</p>
                     { initialData.appImg !== undefined ? initialData.appImg !== null ? initialData.appImg !== '' ? <img src={require('../../assets/img/' + initialData.appImg)} className='appImg' /> : null : null : null }
                     <p>{initialData.tech !== undefined ? initialData.tech !== null ? initialData.tech !== '' ? '('+initialData.tech+')' : null : null : null}</p>
                 </div>
