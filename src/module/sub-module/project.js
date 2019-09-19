@@ -78,7 +78,6 @@ export default class Project extends Component {
                                     }>
                                      <Card
                                         hoverable
-                                        style={{ width: 240 }}
                                         cover={<div className='card'><img src={require('./../../assets/img/' + response.image + '.png')} alt={response.image} className='card-img' /></div>}
                                     >
                                         <Meta title={response.name} description={response.year} />

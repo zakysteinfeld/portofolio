@@ -19,10 +19,10 @@ export default class Footer extends Component {
             <div className='footer'>
                 <Row>
                     <p className='socmed-p'>
-                        <text style={{ fontSize: '15px', paddingRight: '10px', fontWeight: 'bold' }}>{ initialData.lang === 'ja' ? '私に連絡してください' : 'Reach me at'}: </text>
-                        <a className='socmed' href='https://twitter.com/zakysteinfeld' target='_blank' style={{ color: 'black' }}><Icon type='twitter' style={{ fontSize: '25px', color: 'black' }} /></a>
-                        <a className='socmed' href='https://instagram.com/zakysteinfeld' target='_blank' style={{ color: 'black' }}><Icon type='instagram' style={{ fontSize: '25px', color: 'black' }} /></a>
-                        <a className='socmed' href='https://www.linkedin.com/in/muhamadzaky/' target='_blank' style={{ color: 'black' }}><Icon type='linkedin' style={{ fontSize: '25px', color: 'black' }} /></a>
+                        <text style={{ fontSize: '1vw', paddingRight: '0.8vw', fontWeight: 'bold' }}>{ initialData.lang === 'ja' ? '私に連絡してください' : 'Reach me at'}: </text>
+                        <a className='socmed' href='https://twitter.com/zakysteinfeld' target='_blank' style={{ color: 'black' }}><Icon type='twitter' style={{ fontSize: '1.6vw', color: 'black' }} /></a>
+                        <a className='socmed' href='https://instagram.com/zakysteinfeld' target='_blank' style={{ color: 'black' }}><Icon type='instagram' style={{ fontSize: '1.6vw', color: 'black' }} /></a>
+                        <a className='socmed' href='https://www.linkedin.com/in/muhamadzaky/' target='_blank' style={{ color: 'black' }}><Icon type='linkedin' style={{ fontSize: '1.6vw', color: 'black' }} /></a>
                     </p>
                 </Row>
                 <Row className='devider'>
@@ -36,7 +36,7 @@ export default class Footer extends Component {
                 <Row className='devider'>
                     <Divider />
                 </Row>
-                <Row className='socmed-p cpr'>
+                <Row className='socmed-p cpr font-0comma9vw'>
                     {
                         initialData.lang === 'ja' ?
                             <Fragment>
@@ -58,21 +58,21 @@ export default class Footer extends Component {
                             </Fragment>
                     }
                 </Row>
-                <Row className='socmed-p cpr'>
-                    <Col span={2} className='pull-left'>
+                <Row className='socmed-p cpr font-0comma9vw'>
+                    <Col span={4} className='pull-left'>
                         {
                             initialData.lang === 'ja' ?
-                            <span onClick={() => setLang('en')}>英語</span>
+                                <Fragment>
+                                    <span onClick={ () => setLang('en') }>英語</span>
+                                    <span>&nbsp;&nbsp;</span>
+                                    <span onClick={ () => setLang('ja') }>日本語</span>
+                                </Fragment>
                             :
-                            <span onClick={() => setLang('en')}>English</span>
-                        }
-                    </Col>
-                    <Col span={2} className='pull-left'>
-                        {
-                            initialData.lang === 'ja' ?
-                            <span onClick={ () => setLang('ja') }>日本語</span>
-                            :
-                            <span onClick={ () => setLang('ja') }>Japanese</span>
+                                <Fragment>
+                                    <span onClick={ () => setLang('en') }>English</span>
+                                    <span>&nbsp;&nbsp;</span>
+                                    <span onClick={ () => setLang('ja') }>Japanese</span>
+                                </Fragment>
                         }
                     </Col>
                 </Row>

@@ -13,10 +13,10 @@ export default class Bio extends Component {
                     </Col>
                 </Row>
                 <Row className='intro-content'>
-                    <Col span={11} offset={1} className='profile-img-div'>
+                    <Col offset={1} span={11} xs={4} sm={7} md={11} lg={15} className='profile-img-div'>
                         <img src={ProfilePict} className='profile-img' />
                     </Col>
-                    <Col span={11} offset={1}>
+                    <Col offset={1} span={11} xs={4} sm={7} md={11} lg={15}>
                         {
                             initialData.lang === 'ja' ?
                                 <Fragment>

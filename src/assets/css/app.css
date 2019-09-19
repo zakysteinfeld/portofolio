@@ -2,26 +2,27 @@
 @import url('https://fonts.googleapis.com/css?family=Anton|Josefin+Sans:300|Luckiest+Guy|Open+Sans+Condensed:300|Open+Sans|Roboto+Condensed|Lexend+Deca|Roboto|Source+Sans+Pro:400&display=swap');
 
 .app-div {
-    width: 900px;
+    width: 50vw;
+    height: auto;
     background-color: white;
     margin: auto;
 }
 
 .intro-div {
-    padding: 45px 0px;
+    padding: 4.6vw 0px;
     height: 100%;
 }
 
 .name-box {
     font-family: 'Lexend Deca';
-    font-size: 20px;
+    font-size: 1vw;
     text-transform: uppercase;
     color: #fff;
-    font-weight: 400;
+    font-weight: bolder;
     letter-spacing: 5px;
-    padding: 10px;
+    padding: 0.6vw;
     border: 1px solid rgb(0, 26, 46);
-    border-radius: 15px;
+    border-radius: 0.6vw;
     display: block;
     text-align: center;
     background: rgb(0, 26, 46);
@@ -31,7 +32,9 @@
 }
 
 .intro-content {
-    padding: 50px 0px;
+    padding: 5.1vw 0px;
+    display: flex;
+    justify-content: center;
 }
 
 .profile-img-div {
@@ -40,16 +43,17 @@
 }
 
 .profile-img {
-    width: 330px;
-    border-radius: 15px;
+    width: 23vw;
+    height: 35vw;
+    border-radius: 1.54vw;
 }
 
 .hi-text-div {
-    margin-top: 20px;
+    margin-top: 5vw;
 }
 
 .hi-text-div-jp {
-    margin-top: 135px;
+    margin-top: 10vw;
 }
 
 .hi-text {
@@ -63,7 +67,7 @@
     font-family: 'Lexend Deca';
     color: black;
     -webkit-text-stroke: 4px black;
-    font-size: 68px;
+    font-size: 5vw;
 }
 
 .intro-text-div {
@@ -84,8 +88,8 @@
 }
 
 .card {
-    width : 280px;
-    height: 238px;
+    width: 16vw;
+    height: 16vw;
     border-radius: 15px;
     padding: 4%;
     margin: auto;
@@ -95,11 +99,11 @@
 }
 
 .ant-card {
-    width: 280px !important;
+    width: 16vw !important;
 }
 
 .card-img {
-    width : 220px;
+    width : 10vw;
     vertical-align: middle;
 }
 
@@ -107,11 +111,11 @@
     margin: auto;
     display: flex;
     justify-content: center;
-    padding: 11px 0px;
+    padding: 0.5vw 0px;
 }
 
 .project-text-div {
-    padding-bottom: 20px;
+    padding-bottom: 1.8vw;
     display: flex;
     justify-content: center;
     margin: auto;
@@ -121,60 +125,60 @@
 .project-text {
     font-family: 'Lexend Deca';
     color: black;
-    font-size: 40px;
+    font-size: 2.8vw;
     text-align: justify;
 }
 
 .footer {
-    margin-top: 30px;
-    padding-top: 30px;
+    margin-top: 2.5vw;
+    padding-top: 2.5vw;
     font-family: 'Lexend Deca';
     background-color: #fafafa;
 }
 
 .socmed-p {
-    padding: 0px 242px;
+    padding: 0px 14vw;
     display: flex;
 }
 
 .socmed {
-    padding: 0px 5px;
+    padding: 0px 0.2vw;
 }
 
 .devider {
-    padding: 0px 242px;
+    padding: 0px 14vw;
 }
 
 .sendmemail-div {
-    padding: 25px 0px;
+    padding: 2vw 0px;
 }
 
 .sendmemail {
     color: black;
-    font-size: 16px;
+    font-size: 1vw;
 }
 
 .sendmemail:hover {
     color: black;
-    font-size: 16px;
+    font-size: 1vw;
 }
 
 .cpr {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
 }
 
 .backtotop {
-    padding: 0px 15px;
+    padding: 1.5vw 1vw;
     color: black;
-    font-size: 15px;
+    font-size: 1vw;
     font-family: 'Lexend Deca';
 }
 
 .backtotop:hover {
-    padding: 0px 15px;
+    padding: 0px 1vw;
     color: black;
-    font-size: 15px;
+    font-size: 1vw;
     font-family: 'Lexend Deca';
 }
 
@@ -182,12 +186,12 @@
     position: fixed;
     display: flex;
     justify-content: flex-end;
-    right: 20px;
-    bottom: 20px;
+    right: 1.5vw;
+    bottom: 1.5vw;
 }
 
 .button-float-child {
-    padding-right: 10px;
+    padding-right: 0.5;
 }
 
 .font-lexend-deca {
@@ -209,7 +213,7 @@
 }
 
 .car-img-height {
-    height: 500px;
+    height: 29vw;
     width: 100%;
     background-repeat:no-repeat;
     background-size:cover;
@@ -235,12 +239,12 @@
 }
 
 .carousel-arrow-icon {
-    height: 36.7vw;
+    height: 20vw;
     vertical-align: middle;
     margin: auto;
     display: flex;
     justify-content: center;
-    padding: 17vw 0vw;
+    padding: 15vw 2vw;
     font-size: 2vw;
 }
 
@@ -250,4 +254,12 @@
 
 .modal-background .ant-modal-content {
     background: transparent !important;
+}
+
+.font-0comma9vw {
+    font-size: 0.9vw;
+}
+
+.modal-interest {
+    width: 55vw !important;
 }

@@ -25,33 +25,33 @@ export default class ModalInterest extends Component {
     render() {
         const { status, toggle, lang } = this.props;
         const carouselSettings = {
-            autoplay:true,
+            autoplay: true,
             infinite: true,
-            dots:true,
-            effect:'fade',
+            dots: true,
+            effect: 'fade',
             speed: 500,
             slidesToShow: 1,
             slidesToScroll: 1
         }
         return (
             <Modal
-                title={ lang === 'ja' ? '興味' : 'Interest' }
+                title={lang === 'ja' ? '興味' : 'Interest'}
                 centered
                 visible={status}
                 onCancel={() => {
                     toggle('Interest')
-                } }
+                }}
                 footer={null}
-                width={900}
                 keyboard={true}
                 closable={false}
+                className={'modal-interest'}
             >
                 <div className='font-lexend-deca'>
                     <Row>
-                        <Col span={1} className='carousel-arrow-icon'>
+                        <Col span={2} className='carousel-arrow-icon'>
                             <Icon type="left-circle" onClick={this.previous} />
                         </Col>
-                        <Col span={22} className=''>
+                        <Col span={20} className=''>
                             <Carousel ref={node => (this.carousel = node)} {...carouselSettings}>
                                 <div className='car-img-div'>
                                     <img src={Img1} className='car-img-height' />
@@ -70,7 +70,7 @@ export default class ModalInterest extends Component {
                                 </div>
                             </Carousel>
                         </Col>
-                        <Col span={1} className='carousel-arrow-icon'>
+                        <Col span={2} className='carousel-arrow-icon'>
                             <Icon type="right-circle" onClick={this.next} />
                         </Col>
                     </Row>

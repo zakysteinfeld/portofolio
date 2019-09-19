@@ -90,26 +90,6 @@ class Home extends Component {
         // console.log('lang', localStorage.getItem('lang'), getCookies('lang'))
     }
 
-    // usingCookiesConfirm = (status) => {
-    //     setCookies('cookiesinfo', status)
-    // }
-
-    // renderCookiesConfirm = () => {
-    //     return (
-    //         getCookies('cookiesinfo') === true ? 
-    //             <div style={{ bottom: '15', height: '4vw', width: '100%', background: 'grey', position: 'fixed', zIndex: '9998', borderRadius: '18px' }}>
-    //                 <Row>
-    //                     <Col span={20}>Using cookies!</Col>
-    //                     <Col span={4}><Button onClick={() => { this.setCookies('cookiesinfo', false) }}>OK</Button></Col>
-    //                 </Row>
-    //             </div>
-    //             :
-    //             <div style={{ bottom: '15', height: '4vw', width: '100%', background: 'grey', position: 'fixed', zIndex: '9998', borderRadius: '18px' }}>
-    //                 <h1>Closed</h1>
-    //             </div>
-    //     )
-    // }
-
     render() {
         const openModalAction = (param) => {
             if (param === 'Interest') {
@@ -137,13 +117,6 @@ class Home extends Component {
                             <Fade bottom>
                                 <Projects stateData={this.state} status={this.state.projectModalStatus} setToggle={this.projectModalToggle} setContent={this.setProjectModalContent} removeContent={this.removeProjectModalContent} initialData={this.state.projectModalContent} />
                             </Fade>
-                            {/* {
-                                this.state.interestModalStatus === true ? 
-                                    <Fade bottom>
-                                        <SectionInterest />
-                                    </Fade>
-                                : null
-                            } */}
                         </div>
                         <div>
                             <ScrollUpButton>
@@ -182,7 +155,6 @@ class Home extends Component {
                         </Fade>
                         <ModalInterest status={this.state.interestModalStatus} toggle={openModalAction} lang={this.state.lang} />
                         <ModalAbout status={this.state.aboutModalStatus} toggle={openModalAction} lang={this.state.lang} />
-                        {/* {this.renderCookiesConfirm()}                         */}
                         </Fragment>
                 }
             </Fragment>
