@@ -247,3 +247,7 @@
 .image-view .ant-modal {
     width: 90vw !important;
 }
+
+.modal-background .ant-modal-content {
+    background: transparent !important;
+}

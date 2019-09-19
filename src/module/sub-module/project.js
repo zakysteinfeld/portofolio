@@ -14,20 +14,22 @@ export default class Project extends Component {
     renderModalImage = () => {
         const { initialData, stateData } = this.props;
         return (
-            <Modal
-                // title={<text className='font-lexend-deca'>{ initialData.name }</text>}
-                centered
-                visible={this.state.openModalImage}
-                onCancel={() => {
-                    this.openModalImage()
-                } }
-                footer={null}
-                closable={false}
-                className='image-view'
-                width='90vw'
-            >
-                { initialData.appImg !== undefined ? initialData.appImg !== null ? initialData.appImg !== '' ? <div className='image-view'><img src={require('../../assets/img/' + initialData.appImg) } className='appImg' /></div> : null : null : null }
-            </Modal>
+            <div className='modal-background'>
+                <Modal
+                    // title={<text className='font-lexend-deca'>{ initialData.name }</text>}
+                    centered
+                    visible={this.state.openModalImage}
+                    onCancel={() => {
+                        this.openModalImage()
+                    } }
+                    footer={null}
+                    closable={false}
+                    className='modal-background'
+                    width='90vw'
+                >
+                    { initialData.appImg !== undefined ? initialData.appImg !== null ? initialData.appImg !== '' ? <div className='image-view'><img src={require('../../assets/img/' + initialData.appImg) } className='appImg' /></div> : null : null : null }
+                </Modal>
+            </div>
         )
     }
 

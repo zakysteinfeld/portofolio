@@ -155,6 +155,7 @@ class Home extends Component {
                         </div>
                         <Fade>
                             <div className='button-float'>
+                                <ClickOutside onClickOutside={this.closeMenu}>                                    
                                     {this.state.showMenuStatus === true ?
                                         this.state.menuFloat.map(function (response, index) {
                                             return (
@@ -164,16 +165,19 @@ class Home extends Component {
                                         : null
                                     }
                                     {this.state.showMenuStatus === true ?
-                                            <ClickOutside onClickOutside={this.closeMenu}>
-                                                <Fade>
-                                                    <Button type='primary' shape='circle' icon='close' size='large' className='shadow-btn' onClick={() => { this.closeMenu() }} />
-                                                </Fade>
-                                            </ClickOutside>    
-                                            :
+                                        <div className='pull-right'>
+                                            <Fade>
+                                                <Button type='primary' shape='circle' icon='close' size='large' className='shadow-btn' onClick={() => { this.closeMenu() }} />
+                                            </Fade>
+                                        </div>
+                                        :
+                                        <div className='pull-right'>
                                             <Fade>
                                                 <Button type='primary' shape='circle' icon='menu' size='large' className='shadow-btn' onClick={() => { this.showMenu() }} />
                                             </Fade>
+                                        </div>
                                     }
+                                </ClickOutside>                                            
                             </div>
                         </Fade>
                         <ModalInterest status={this.state.interestModalStatus} toggle={openModalAction} lang={this.state.lang} />
