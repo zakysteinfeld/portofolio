@@ -198,6 +198,10 @@
     width: 100%;
 }
 
+.appImg-resize {
+    width: 90vw;
+}
+
 .center-pos {
     float: inherit;
     transform: translate(0%, 0%);
@@ -228,4 +232,18 @@
 .pull-right {
     display: flex;
     justify-content: flex-end;
+}
+
+.carousel-arrow-icon {
+    height: 36.7vw;
+    vertical-align: middle;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 17vw 0vw;
+    font-size: 2vw;
+}
+
+.image-view .ant-modal {
+    width: 90vw !important;
 }

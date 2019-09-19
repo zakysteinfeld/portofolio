@@ -5,9 +5,9 @@ import CustomScrollTop from './custom-scroll-top';
 import Fade from 'react-reveal/Fade';
 import Img1 from './../assets/img/madden19.jpg';
 import Img2 from './../assets/img/flagfootball.jpg';
-import Img3 from './../assets/img/jiwarudays.jpg';
+import Img3 from './../assets/img/Sustainable.jpg';
 import Img4 from './../assets/img/applemusic.png';
-import Img5 from './../assets/img/singout.jpg';
+import Img5 from './../assets/img/Yoake Made Tsuyogaranakutemo Ii.jpg';
 
 export default class Interest extends Component {
     render() {

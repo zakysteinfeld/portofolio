@@ -13,6 +13,7 @@ export default class ModalAbout extends Component {
                     toggle('About')
                 } }
                 footer={null}
+                closable={false}
             >
                 <div className='font-lexend-deca'>
                     <p style={{ fontSize: '15px', textAlign: 'justify' }}>{ lang === 'ja' ? 'これはムハマド・ザキのポートフォリオウェブサイトです' : 'This is a portofolio website of Muhamad Zaky' }</p>
@@ -22,6 +23,7 @@ export default class ModalAbout extends Component {
                         ・bootstrap v4.3.1 <br/>
                         ・react-reveal v1.2.2 <br/>
                         ・moment v2.24.0 <br/>
+                        ・universal-cookie v4.0.2 <br/>
                     </p>
                     <p style={{ textAlign: 'justify' }}>
                         {
@@ -29,7 +31,7 @@ export default class ModalAbout extends Component {
                         }
                     </p>
                     <p><b>{ lang === 'ja' ? 'ムハマド・ザキ、よろしくお願いいたします' : 'Regards, Muhamad Zaky' }</b></p>
-                    <p style={{ position: 'absolute', bottom: '0' }}>App Version: 2.4.16</p>
+                    <p style={{ position: 'absolute', bottom: '0' }}>App Version: 2.4.17</p>
                 </div>
             </Modal>
         )

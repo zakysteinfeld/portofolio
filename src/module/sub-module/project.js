@@ -3,11 +3,39 @@ import { Row, Col, Card, Modal, Button } from 'antd';
 import data from './../../common/json/project.json';
 
 export default class Project extends Component {
+    state = {
+        openModalImage: false
+    }
+
+    openModalImage = () => {
+        this.setState({ openModalImage: !this.state.openModalImage })
+    }
+
+    renderModalImage = () => {
+        const { initialData, stateData } = this.props;
+        return (
+            <Modal
+                // title={<text className='font-lexend-deca'>{ initialData.name }</text>}
+                centered
+                visible={this.state.openModalImage}
+                onCancel={() => {
+                    this.openModalImage()
+                } }
+                footer={null}
+                closable={false}
+                className='image-view'
+                width='90vw'
+            >
+                { initialData.appImg !== undefined ? initialData.appImg !== null ? initialData.appImg !== '' ? <div className='image-view'><img src={require('../../assets/img/' + initialData.appImg) } className='appImg' /></div> : null : null : null }
+            </Modal>
+        )
+    }
+
     renderModalProjects = () => {
         const { initialData, stateData } = this.props;
         return (
             <Modal
-                title={<text className='font-lexend-deca'>{initialData.name}</text>}
+                title={<text className='font-lexend-deca'>{ initialData.name }</text>}
                 centered
                 visible={this.props.status}
                 onCancel={() => {
@@ -15,11 +43,12 @@ export default class Project extends Component {
                     this.props.removeContent()
                 } }
                 footer={null}
+                closable={false}
             >
                 <div className='font-lexend-deca'>
                     <p>{ stateData.lang === 'ja' ? initialData.descjp : initialData.desc }</p>
-                    { initialData.appImg !== undefined ? initialData.appImg !== null ? initialData.appImg !== '' ? <img src={require('../../assets/img/' + initialData.appImg)} className='appImg' /> : null : null : null }
-                    <p>{initialData.tech !== undefined ? initialData.tech !== null ? initialData.tech !== '' ? '('+initialData.tech+')' : null : null : null}</p>
+                    { initialData.appImg !== undefined ? initialData.appImg !== null ? initialData.appImg !== '' ? <img src={require('../../assets/img/' + initialData.appImg) } className='appImg' onClick={ () => this.openModalImage() } /> : null : null : null }
+                    <p>{ initialData.tech !== undefined ? initialData.tech !== null ? initialData.tech !== '' ? '('+initialData.tech+')' : null : null : null }</p>
                 </div>
             </Modal>
         )
@@ -58,6 +87,7 @@ export default class Project extends Component {
                     }
                 </Row>
                 {this.renderModalProjects()}
+                {this.renderModalImage()}
             </div>
         )
     }
