@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import { Row, Col } from 'antd';
 import ProfilePict from './../../assets/img/pict.jpg';
+import Fade from 'react-reveal/Fade';
 
 export default class Bio extends Component {
     render() {

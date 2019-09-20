@@ -213,13 +213,17 @@
 }
 
 .car-img-height {
-    height: 29vw;
+    vertical-align: middle;
+    vertical-align: -webkit-baseline-middle;
+    /* height: 29vw; */
     width: 100%;
     background-repeat:no-repeat;
     background-size:cover;
 }
 
 .car-img-div {
+    vertical-align: middle;
+    vertical-align: -webkit-baseline-middle;
     display: flex;
     justify-content: center;
 }
@@ -244,12 +248,12 @@
     margin: auto;
     display: flex;
     justify-content: center;
-    padding: 15vw 2vw;
+    padding: 22vw 1vw;
     font-size: 2vw;
 }
 
 .image-view .ant-modal {
-    width: 90vw !important;
+    width: 95vw !important;
 }
 
 .modal-background .ant-modal-content {
@@ -261,5 +265,9 @@
 }
 
 .modal-interest {
-    width: 55vw !important;
+    width: 52vw !important;
+}
+
+.divider {
+    padding: 1vw 0vw;
 }

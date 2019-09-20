@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Row, Col, Card, Modal, Button } from 'antd';
 import data from './../../common/json/project.json';
+import Fade from 'react-reveal/Fade';
 
 export default class Project extends Component {
     state = {
@@ -68,6 +69,7 @@ export default class Project extends Component {
                     </text>
                 </Row>
                 <Row>
+                    <Fade opposite cascade>
                     {
                         data.map(function(response, index) {
                             return (
@@ -76,16 +78,17 @@ export default class Project extends Component {
                                         setToggle(true) 
                                         setContent(response)} 
                                     }>
-                                     <Card
-                                        hoverable
-                                        cover={<div className='card'><img src={require('./../../assets/img/' + response.image + '.png')} alt={response.image} className='card-img' /></div>}
-                                    >
-                                        <Meta title={response.name} description={response.year} />
-                                    </Card>
+                                        <Card
+                                            hoverable
+                                            cover={<div className='card'><img src={require('./../../assets/img/' + response.image + '.png')} alt={response.image} className='card-img' /></div>}
+                                            >
+                                            <Meta title={response.name} description={response.year} />
+                                        </Card>
                                 </Col>
                             );
                         })
                     }
+                    </Fade>
                 </Row>
                 {this.renderModalProjects()}
                 {this.renderModalImage()}
