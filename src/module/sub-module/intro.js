@@ -37,7 +37,7 @@ export default class Bio extends Component {
                                     </Row>
                                     <Row className='intro-text-div'>
                                         <text className='intro-text'>
-                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; My name is <b>Zaky</b>, I'm a Front-end Developer currently, using javascript framework <b>ReactJS</b> with speciality in <b>.NET (C#)</b> on the back.
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; My name is <b>Zaky</b>, I'm a Frontend Developer currently, using javascript framework <b>ReactJS</b> with speciality in <b>.NET (C#)</b> on the back.
                                         </text>
                                     </Row>
                                 </Fragment>

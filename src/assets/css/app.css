@@ -1,5 +1,16 @@
 @import '~antd/dist/antd.css';
 @import url('https://fonts.googleapis.com/css?family=Anton|Josefin+Sans:300|Luckiest+Guy|Open+Sans+Condensed:300|Open+Sans|Roboto+Condensed|Lexend+Deca|Roboto|Source+Sans+Pro:400&display=swap');
+@font-face {
+    font-family: 'SF Pro Text';
+    src:
+        local('SF Pro Text'),
+        local('SFProText-Regular'),
+        url('./../font/SFProText-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+@font-face {
+    font-family: 'SF Pro Text';
+    src: url('./../font/SFProText-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+  }
 
 .app-div {
     width: 50vw;
@@ -14,7 +25,7 @@
 }
 
 .name-box {
-    font-family: 'Lexend Deca';
+    font-family: 'SF Pro Text';
     font-size: 1vw;
     text-transform: uppercase;
     color: #fff;
@@ -57,14 +68,14 @@
 }
 
 .hi-text {
-    font-family: 'Lexend Deca';
+    font-family: 'SF Pro Text';
     color: black;
     -webkit-text-stroke: 13px black;
     font-size: 200px;
 }
 
 .hi-text-jp {
-    font-family: 'Lexend Deca';
+    font-family: 'SF Pro Text';
     color: black;
     -webkit-text-stroke: 4px black;
     font-size: 5vw;
@@ -79,7 +90,7 @@
 }
 
 .intro-text {
-    font-family: 'Lexend Deca';
+    font-family: 'SF Pro Text';
     color: black;
     font-size: 1.2vw;
     display: inline-block;
@@ -123,7 +134,7 @@
 }
 
 .project-text {
-    font-family: 'Lexend Deca';
+    font-family: 'SF Pro Text';
     color: black;
     font-size: 2.8vw;
     text-align: justify;
@@ -132,7 +143,7 @@
 .footer {
     margin-top: 2.5vw;
     padding-top: 2.5vw;
-    font-family: 'Lexend Deca';
+    font-family: 'SF Pro Text';
     background-color: #fafafa;
 }
 
@@ -172,14 +183,14 @@
     padding: 1.5vw 1vw;
     color: black;
     font-size: 1vw;
-    font-family: 'Lexend Deca';
+    font-family: 'SF Pro Text';
 }
 
 .backtotop:hover {
     padding: 0px 1vw;
     color: black;
     font-size: 1vw;
-    font-family: 'Lexend Deca';
+    font-family: 'SF Pro Text';
 }
 
 .button-float {
@@ -196,6 +207,10 @@
 
 .font-lexend-deca {
     font-family: 'Lexend Deca';
+}
+
+.font-SF-Pro-Display {
+    font-family: 'SF Pro Text';
 }
 
 .appImg {
@@ -217,14 +232,19 @@
     vertical-align: -webkit-baseline-middle;
     /* height: 29vw; */
     width: 100%;
+    /* width: 50vw; */
     background-repeat:no-repeat;
     background-size:cover;
+}
+
+.car-div {
+    display: contents;
 }
 
 .car-img-div {
     vertical-align: middle;
     vertical-align: -webkit-baseline-middle;
-    display: flex;
+    display: contents;
     justify-content: center;
 }
 
@@ -250,6 +270,20 @@
     justify-content: center;
     padding: 22vw 1vw;
     font-size: 2vw;
+    position: absolute;
+    z-index: 99;
+}
+
+.carousel-arrow-right {
+    /* position: fixed;
+    right: 25.8vw;
+    z-index: 99; */
+}
+
+.carousel-arrow-left {
+    /* position: fixed;
+    left: 23.7vw;
+    z-index: 99; */
 }
 
 .image-view .ant-modal {

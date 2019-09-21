@@ -29,11 +29,14 @@ export default class ModalInterest extends Component {
             autoplay: true,
             infinite: true,
             dots: true,
+            dotPosition: 'right',
             effect: 'fade',
             speed: 500,
             slidesToShow: 1,
             slidesToScroll: 1,
             dragable: true,
+            arrows: true,
+            swipe: true
         }
         return (
             <Modal
@@ -48,7 +51,7 @@ export default class ModalInterest extends Component {
                 closable={false}
                 className={'modal-interest'}
             >
-                <div className='font-lexend-deca'>
+                <div className='font-SF-Pro-Display'>
                     <Row>
                         <div>
                             <div>
@@ -62,10 +65,8 @@ export default class ModalInterest extends Component {
                         <Divider />                    
                     </Row>
                     <Row>
-                        <Col span={1} className='carousel-arrow-icon'>
-                            <Icon type="left-circle" onClick={this.previous} />
-                        </Col>
-                        <Col span={22} className=''>
+                        <Col className='car-div'>
+                            {/* <Icon className='carousel-arrow-icon' type="left-circle" onClick={this.previous} /> */}
                             <Carousel ref={node => (this.carousel = node)} {...carouselSettings}>
                                 <div className='car-img-div'>
                                     <img src={Img1} className='car-img-height' />
@@ -83,9 +84,7 @@ export default class ModalInterest extends Component {
                                     <img src={Img4} className='car-img-height' />
                                 </div>
                             </Carousel>
-                        </Col>
-                        <Col span={1} className='carousel-arrow-icon'>
-                            <Icon type="right-circle" onClick={this.next} />
+                            {/* <Icon className='carousel-arrow-icon' type="right-circle" onClick={this.next} /> */}
                         </Col>
                     </Row>
                 </div>

@@ -17,7 +17,7 @@ export default class Project extends Component {
         return (
             <div className='modal-background'>
                 <Modal
-                    // title={<text className='font-lexend-deca'>{ initialData.name }</text>}
+                    // title={<text className='font-SF-Pro-Display'>{ initialData.name }</text>}
                     centered
                     visible={this.state.openModalImage}
                     onCancel={() => {
@@ -38,7 +38,7 @@ export default class Project extends Component {
         const { initialData, stateData } = this.props;
         return (
             <Modal
-                title={<text className='font-lexend-deca'>{ initialData.name }</text>}
+                title={<text className='font-SF-Pro-Display'>{ initialData.name }</text>}
                 centered
                 visible={this.props.status}
                 onCancel={() => {
@@ -48,7 +48,7 @@ export default class Project extends Component {
                 footer={null}
                 closable={false}
             >
-                <div className='font-lexend-deca'>
+                <div className='font-SF-Pro-Display'>
                     <p>{ stateData.lang === 'ja' ? initialData.descjp : initialData.desc }</p>
                     { initialData.appImg !== undefined ? initialData.appImg !== null ? initialData.appImg !== '' ? <img src={require('../../assets/img/' + initialData.appImg) } className='appImg' onClick={ () => this.openModalImage() } /> : null : null : null }
                     <p>{ initialData.tech !== undefined ? initialData.tech !== null ? initialData.tech !== '' ? '('+initialData.tech+')' : null : null : null }</p>
@@ -62,7 +62,7 @@ export default class Project extends Component {
         const { status, setToggle, setContent, initialData, stateData } = this.props;
 
         return(
-            <div className='font-lexend-deca'>
+            <div className='font-SF-Pro-Display'>
                 <Row className='project-text-div'>
                     <text className='project-text'>
                         { stateData.lang === 'ja' ? 'プロジェクス' : 'Projects' }

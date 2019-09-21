@@ -16,7 +16,7 @@ export default class ModalAbout extends Component {
                 footer={null}
                 closable={false}
             >
-                <div className='font-lexend-deca'>
+                <div className='font-SF-Pro-Display'>
                     <div>{ lang === 'ja' ? 'について' : 'About'}</div>
                     <div className='divider'>
                         <Divider />

@@ -104,7 +104,7 @@ class Home extends Component {
                 {
                     this.state.welcomeStat ?
                         <Fade bottom>
-                            <div className='font-lexend-deca' style={{ position: 'fixed', zIndex: '9999', width: '100%', height: '100%', background: 'white', display: 'flex', justifyContent: 'center', verticalAlign: 'middle', padding: '20vw', fontSize: '50px' }}>
+                            <div className='font-SF-Pro-Display' style={{ position: 'fixed', zIndex: '9999', width: '100%', height: '100%', background: 'white', display: 'flex', justifyContent: 'center', verticalAlign: 'middle', padding: '20vw', fontSize: '50px' }}>
                                 {this.state.lang === 'ja' ? 'ざきのポートフォリオへようこそ！' : 'Welcome to Zakys Portofolio!'}
                             </div>
                         </Fade>
