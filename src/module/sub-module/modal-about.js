@@ -36,7 +36,7 @@ export default class ModalAbout extends Component {
                         }
                     </p>
                     <p><b>{ lang === 'ja' ? 'ムハマド・ザキ、よろしくお願いいたします。' : 'Regards, Muhamad Zaky' }</b></p>
-                    <p style={{ position: 'absolute', bottom: '0' }}>App Version: 2.4.21</p>
+                    <p style={{ position: 'absolute', bottom: '0' }}>App Version: 2.4.22</p>
                 </div>
             </Modal>
         )
