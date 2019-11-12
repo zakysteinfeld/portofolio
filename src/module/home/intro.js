@@ -19,7 +19,7 @@ export default class Intro extends Component {
             <Col span={15} className='sf-pro-rounded-regular' style={{ color: 'white' }}>
               <Row>
                 <Col span={15}>
-                  <span style={{ fontSize: '3em', fontWeight: 'bold' }}>{language.name}</span>
+                  <span style={{ fontSize: '3em', fontWeight: 'bold' }}>Muhamad Zaky</span>
                 </Col>
                 <Col span={9} style={{ marginTop: '10px' }}>
                   <Row>

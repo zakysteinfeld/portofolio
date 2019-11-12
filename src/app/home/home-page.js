@@ -14,18 +14,18 @@ class HomePage extends Component {
     }
   }
 
-  componentWillMount() {
-    const langCookie = getCookies('lang')
-    this.setState({ lang: langCookie })
-    console.log('language', langCookie)
-  }
+  // componentWillMount() {
+  //   const langCookie = getCookies('lang')
+  //   this.setState({ lang: langCookie })
+  //   console.log('language', langCookie)
+  // }
 
-  componentDidUpdate(prevProps, prevState) {
-    if (prevState.lang !== localStorage.getItem('lang')) {
-      this.setState({ lang: localStorage.getItem('lang')})
-      console.log('language ngeset state')
-    }
-  }
+  // componentDidUpdate(prevProps, prevState) {
+  //   if (prevState.lang !== localStorage.getItem('lang')) {
+  //     this.setState({ lang: localStorage.getItem('lang')})
+  //     console.log('language ngeset state')
+  //   }
+  // }
   
 
   introArrowOnClick = () => {
@@ -34,10 +34,14 @@ class HomePage extends Component {
 
   
   render() {
-    const language = this.state.lang === 'en' ? enUS : jaJP
+    // const language = this.state.lang === 'en' ? enUS : jaJP
     return (
       <Fragment>
-        <Intro arrowOnClick={this.introArrowOnClick} initialData={this.state} language={language} />
+        <Intro 
+          arrowOnClick={this.introArrowOnClick} 
+          initialData={this.state} 
+          // language={language} 
+        />
         <Project />
       </Fragment>
     )

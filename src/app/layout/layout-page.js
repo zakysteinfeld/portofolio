@@ -8,9 +8,9 @@ import Footer from './footer';
 import history from './../../common/history';
 
 class LayoutPage extends Component {
-  setLangfromFooter = (value) => {
-    localStorage.setItem('lang', value)
-  }
+  // setLangfromFooter = (value) => {
+  //   localStorage.setItem('lang', value)
+  // }
 
   render() {
     const { Content } = Layout;
@@ -27,7 +27,9 @@ class LayoutPage extends Component {
                 <Route exact path='/404-Not-Found' component={NotFound404} />
               </Switch>
             </Layout>
-            <Footer setLangfromFooter={this.setLangfromFooter} />
+            <Footer 
+              // setLangfromFooter={this.setLangfromFooter} 
+            />
           </Router>
         </Content>
       </Layout>
