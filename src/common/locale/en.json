@@ -1,0 +1,15 @@
+{
+  "nameBox": "Muhamad Zaky",
+  "MyStory": "My Story",
+  "About": "About",
+  "name": "Muhamad Zaky",
+  "position1": ".NET Developer",
+  "position2": "Front End Developer",
+  "bornText": "Born",
+  "bornDate": "October 23. 1998",
+  "nationalityText": "Nationality",
+  "nationality": "Indonesia",
+  "currentLocation": "Bandung, Indonesia",
+  "Bio": "My name is <b>Zaky</b>, I'm a Frontend Developer currently, using javascript framework <b>ReactJS</b> with speciality in <b>.NET (C#)</b> on the back.",
+  "ProjectTitle": "Project"
+}

@@ -38,5 +38,15 @@
         "descjp": "PocketBank-Merchantは商人のアプリです。",
         "tech": "React JS, ati-firebase, ati-react-web, antd",
         "appImg": "pocketbank.png"
+    },
+    {
+        "name": "Trade-AI",
+        "year": "2019",
+        "image": "ibm",
+        "client": "IBM",
+        "desc": "MITSTrade is a machine learning.",
+        "descjp": "PocketBank-Merchantは商人のアプリです。",
+        "tech": "React JS, antd",
+        "appImg": "ibm.png"
     }
 ]

@@ -8,248 +8,77 @@
         url('./../font/SFProText-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
 }
 @font-face {
+    font-family: 'SF Pro Rounded Regular';
+    src:
+        local('SF Pro Rounded Regular'),
+        local('SF-Pro-Rounded-Regular'),
+        url('./../font/SF-Pro-Rounded-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+@font-face {
+    font-family: 'Samsung Sans';
+    src:
+        local('Samsung Sans'),
+        local('SamsungOneUI-400'),
+        url('./../font/SamsungOneUI-400.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+@font-face {
     font-family: 'SF Pro Text';
     src: url('./../font/SFProText-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
-  }
-
-.app-div {
-    width: 50vw;
-    height: auto;
-    background-color: white;
-    margin: auto;
+}
+@font-face {
+    font-family: 'SF Pro Rounded Regular';
+    src: url('./../font/SF-Pro-Rounded-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+@font-face {
+    font-family: 'Samsung Sans';
+    src: url('./../font/SamsungOneUI-400.ttf')  format('truetype'), /* Safari, Android, iOS */
 }
 
-.intro-div {
-    padding: 4.6vw 0px;
-    height: 100%;
+.header {
+    position: fixed;
+    width: 100%;
+    padding: 5px 14vw;
+    z-index: 99;
+    background-color: rgba(5, 5, 5, 0.9);
+}
+
+.footer {
+    padding: 20px 0px;
+    bottom: 0px;
+}
+
+.sf-pro-rounded-regular {
+    font-family: 'SF Pro Rounded Regular';
+}
+
+.samsung-sans {
+    font-family: 'Samsung Sans';
+}
+
+.roboto {
+    font-family: 'Roboto';
+}
+
+.bg-white {
+    background-color: white;
 }
 
 .name-box {
-    font-family: 'SF Pro Text';
-    font-size: 1vw;
+    font-size: 1em;
     text-transform: uppercase;
     color: #fff;
     font-weight: bolder;
     letter-spacing: 5px;
-    padding: 0.6vw;
+    padding: 10px 15px;
     border: 1px solid rgb(0, 26, 46);
-    border-radius: 0.6vw;
+    border-radius: 25px;
     display: block;
     text-align: center;
     background: rgb(0, 26, 46);
     width: fit-content;
     line-height: 1.5em;
     overflow: hidden;
-}
-
-.intro-content {
-    padding: 5.1vw 0px;
-    display: flex;
-    justify-content: center;
-}
-
-.profile-img-div {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.profile-img {
-    width: 23vw;
-    height: 35vw;
-    border-radius: 1.54vw;
-}
-
-.hi-text-div {
-    margin-top: 5vw;
-}
-
-.hi-text-div-jp {
-    margin-top: 10vw;
-}
-
-.hi-text {
-    font-family: 'SF Pro Text';
-    color: black;
-    -webkit-text-stroke: 13px black;
-    font-size: 200px;
-}
-
-.hi-text-jp {
-    font-family: 'SF Pro Text';
-    color: black;
-    -webkit-text-stroke: 4px black;
-    font-size: 5vw;
-}
-
-.intro-text-div {
-    margin-top: -30px;
-}
-
-.intro-text-div-jp {
-    margin-top: 10px;
-}
-
-.intro-text {
-    font-family: 'SF Pro Text';
-    color: black;
-    font-size: 1.2vw;
-    display: inline-block;
-    text-align: justify;
-    text-justify: inter-word;
-}
-
-.card {
-    width: 16vw;
-    height: 16vw;
-    border-radius: 15px;
-    padding: 4%;
-    margin: auto;
-    align-content: center;
-    justify-content: center;
-    display: inline-grid;
-}
-
-.ant-card {
-    width: 16vw !important;
-}
-
-.card-img {
-    width : 10vw;
-    vertical-align: middle;
-}
-
-.project-div {
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    padding: 0.5vw 0px;
-}
-
-.project-text-div {
-    padding-bottom: 1.8vw;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    align-content: center;
-}
-
-.project-text {
-    font-family: 'SF Pro Text';
-    color: black;
-    font-size: 2.8vw;
-    text-align: justify;
-}
-
-.footer {
-    margin-top: 2.5vw;
-    padding-top: 2.5vw;
-    font-family: 'SF Pro Text';
-    background-color: #fafafa;
-}
-
-.socmed-p {
-    padding: 0px 14vw;
-    display: flex;
-}
-
-.socmed {
-    padding: 0px 0.2vw;
-}
-
-.devider {
-    padding: 0px 14vw;
-}
-
-.sendmemail-div {
-    padding: 2vw 0px;
-}
-
-.sendmemail {
-    color: black;
-    font-size: 1vw;
-}
-
-.sendmemail:hover {
-    color: black;
-    font-size: 1vw;
-}
-
-.cpr {
-    padding-top: 1vw;
-    padding-bottom: 1vw;
-}
-
-.backtotop {
-    padding: 1.5vw 1vw;
-    color: black;
-    font-size: 1vw;
-    font-family: 'SF Pro Text';
-}
-
-.backtotop:hover {
-    padding: 0px 1vw;
-    color: black;
-    font-size: 1vw;
-    font-family: 'SF Pro Text';
-}
-
-.button-float {
-    position: fixed;
-    display: flex;
-    justify-content: flex-end;
-    right: 1.5vw;
-    bottom: 1.5vw;
-}
-
-.button-float-child {
-    padding-right: 0.5;
-}
-
-.font-lexend-deca {
-    font-family: 'Lexend Deca';
-}
-
-.font-SF-Pro-Display {
-    font-family: 'SF Pro Text';
-}
-
-.appImg {
-    width: 100%;
-}
-
-.appImg-resize {
-    width: 90vw;
-}
-
-.center-pos {
-    float: inherit;
-    transform: translate(0%, 0%);
-    width: 60%;
-}
-
-.car-img-height {
-    vertical-align: middle;
-    vertical-align: -webkit-baseline-middle;
-    /* height: 29vw; */
-    width: 100%;
-    /* width: 50vw; */
-    background-repeat:no-repeat;
-    background-size:cover;
-}
-
-.car-div {
-    display: contents;
-}
-
-.car-img-div {
-    vertical-align: middle;
-    vertical-align: -webkit-baseline-middle;
-    display: contents;
-    justify-content: center;
-}
-
-.shadow-btn {
-    box-shadow: 0px 0px 10px 0px rgba(24, 144, 255, 0.5);
+    box-shadow: 2px 2px 12px 2px rgba(0, 26, 46, 0.5);
 }
 
 .pull-left {
@@ -262,46 +91,164 @@
     justify-content: flex-end;
 }
 
-.carousel-arrow-icon {
-    height: 20vw;
-    vertical-align: middle;
-    margin: auto;
+.pull-center {
     display: flex;
     justify-content: center;
-    padding: 22vw 1vw;
-    font-size: 2vw;
+}
+
+.section-div {
+    width: 70vw;
+    height: auto;
+    background-color: white;
+    margin: auto;
+}
+
+.intro-content-div {
+    margin: 8vw 0px 8vw;
+}
+
+.profile-pict {
+    width: 21vw;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.shadow {
+    box-shadow: 0px 2px 12px 2px rgba(107, 116, 124, 0.5);
+}
+
+.project-title {
+    color: white;
+    font-size: 1.3em;
+    background-image: linear-gradient(to bottom right, #DFB7F3, #A699E1);
+    padding: 10px 25px;
+    border-radius: 100px;
+    width: fit-content;
+    box-shadow: 0px 2px 12px 2px #A699E1;
+
+}
+
+.project-div {
+    background-color: white;
+    box-shadow: 0px 1px 12px 2px rgba(107, 116, 124, 0.5);
+    border-radius: 40px;
+    padding: 20px;
+    margin-top: -100px;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+.project-card {
+    position: relative;
+    display: block;
+    z-index: 1;
+    border-radius: 20px;
+    background-color: white;
+    padding: 10px;
+    width: 220px;
+    height: 295px;
+    margin: 20px 10px;
+}
+
+.project-card:hover {
+    position: relative;
+    display: block;
+    z-index: 1;
+    border-radius: 20px;
+    background-color: white;
+    padding: 10px;
+    width: 220px;
+    height: 295px;
+    margin: 20px 10px;
+    box-shadow: 0px 2px 15px 4px rgba(107, 116, 124, 0.5);
+    transition-duration:0.3s;
+}
+
+.project-card-bg {
     position: absolute;
-    z-index: 99;
+    z-index: 0;
+    border-radius: 20px;
+    background-color: white;
+    padding: 10px;
+    width: 220px;
+    height: 295px;
+    margin: 20px 10px;
 }
 
-.carousel-arrow-right {
-    /* position: fixed;
-    right: 25.8vw;
-    z-index: 99; */
+.project-card-bg:hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    border-radius: 20px;
+    background-color: white;
+    padding: 10px;
+    width: 220px;
+    height: 295px;
+    margin: 20px 10px;
+    /* animation-name: spin;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+    transform: rotate(5deg);
 }
 
-.carousel-arrow-left {
-    /* position: fixed;
-    left: 23.7vw;
-    z-index: 99; */
+.project-card-image {
+    width: 100%;
 }
 
-.image-view .ant-modal {
-    width: 95vw !important;
+.project-card-image-div {
+    width: 300px;
+    height: 250px;
+    min-height: 12em;
+    display: table-cell;
+    vertical-align: middle;
 }
 
-.modal-background .ant-modal-content {
-    background: transparent !important;
+.project-card-text {
+    bottom: 18px;
+    left: -3px;
+    background-image: linear-gradient(to bottom right, #145298, #88C7FA);
+    color: white;
+    width: 210px;
+    padding: 10px;
+    border-radius: 20px;
 }
 
-.font-0comma9vw {
-    font-size: 0.9vw;
+.project-modal-div, .ant-modal-content {
+    border-radius: 30px;
 }
 
-.modal-interest {
-    width: 52vw !important;
+.card-img {
+    width: 100%;
 }
 
-.divider {
-    padding: 1vw 0vw;
+.bg-dopeblue {
+    /* background-color: #3f51b5; */
+    background-image: linear-gradient(to top left, #88C7FA, #6582F7);
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.dynamic {
+    height: calc(100vh - 202px);
+}
+
+.black-divider .ant-divider .ant-divider-vertical{
+    background: black !important;
+    background-color: black !important;
+}
+
+.text-style-1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+@keyframes spin { 
+    from { 
+        transform: rotate(0deg); 
+    } to { 
+        transform: rotate(5deg); 
+    }
 }

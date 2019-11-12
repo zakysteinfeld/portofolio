@@ -1,0 +1,15 @@
+{
+  "nameBox": "横山ざき",
+  "MyStory": "私の話",
+  "About": "について",
+  "name": "横山ざき",
+  "position1": ".NETデベロッパー",
+  "position2": "フロントエンドデベロッパー",
+  "bornText": "誕生日",
+  "bornDate": "1998年10月23日",
+  "nationalityText": "国籍",
+  "nationality": "インドネシア",
+  "currentLocation": "バンドン, インドネシア",
+  "Bio": "私の名前は<b>ざき</b>です。現在、私はフロントエンド開発者で、JavaScriptフレームワーク<b> ReactJS </ b>を使用しており、裏面に<b> .NET（C＃）</ b>があります。",
+  "ProjectTitle": "プロジェクト"
+}
