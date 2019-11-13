@@ -63,6 +63,12 @@ a::selection {
     color: white !important;
 }
 
+.socmed {
+    font-size: 1.5vw;
+    color: #4c5256;
+    padding: 0px 0.5vw;
+}
+
 /* home */
 
 .bg-white {
