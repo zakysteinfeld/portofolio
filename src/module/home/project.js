@@ -43,6 +43,7 @@ export default class Project extends Component {
   }
   
   render () {
+    let _this = this
     return (
       <div className='section-div'>
         <Row>
@@ -56,30 +57,32 @@ export default class Project extends Component {
           {
             dataJSON.map(function (response, index) {
               return (
-                <Col md={8} className='project-card shadow' key={index}
-                  // onClick={() => this.onClickModal(item, true)}
-                >
-                  <Row>
-                    <Col className='project-card-image-div'>
-                      <img src={require('./../../assets/img/' + response.image + '.png')} alt={response.image} className='project-card-image' />
-                    </Col>
-                  </Row>
-                  <Row>
-                    <Col className='project-card-text shadow sf-pro-rounded-regular'>
-                      <Row>
-                        <span style={{ letterSpacing: '2px' }}><b>{response.name}</b></span>
-                      </Row>
-                      <Row>
-                        <span>{response.year}</span>
-                      </Row>
-                    </Col>
-                  </Row>
-                </Col>
+                <a>
+                  <Col md={8} className='project-card shadow' key={index}
+                    onClick={() => _this.onClickModal(response, true)}
+                  >
+                    <Row>
+                      <Col className='project-card-image-div'>
+                        <img src={require('./../../assets/img/' + response.image + '.png')} alt={response.image} className='project-card-image' />
+                      </Col>
+                    </Row>
+                    <Row>
+                      <Col className='project-card-text shadow sf-pro-rounded-regular'>
+                        <Row>
+                          <span style={{ letterSpacing: '2px' }}><b>{response.name}</b></span>
+                        </Row>
+                        <Row>
+                          <span>{response.year}</span>
+                        </Row>
+                      </Col>
+                    </Row>
+                  </Col>
+                </a>
               )
             })
           }
         </Row>
-        {/* <ModalProject modalContent={this.state.modalContent} modalStatus={this.state.modalStatus} onClickModal={this.onClickModal} /> */}
+        { _this.state.modalStatus === true ? <ModalProject modalContent={this.state.modalContent} modalStatus={this.state.modalStatus} onClickModal={this.onClickModal} /> : null}
       </div>
     )
   }

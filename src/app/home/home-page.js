@@ -1,4 +1,5 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component, Fragment, Suspense, lazy } from 'react';
+import { Spin, Icon } from 'antd'
 import Intro from './../../module/home/intro';
 import Project from './../../module/home/project';
 import { getCookies } from '../../common/utils/cookies-utils';
@@ -35,6 +36,7 @@ class HomePage extends Component {
   
   render() {
     // const language = this.state.lang === 'en' ? enUS : jaJP
+    const ProjectPage = lazy(() => import('./../../module/home/project'))
     return (
       <Fragment>
         <Intro 
@@ -42,7 +44,11 @@ class HomePage extends Component {
           initialData={this.state} 
           // language={language} 
         />
-        <Project />
+        <Suspense fallback={<Spin indicator={<Icon type='loading' theme='filled' spin />} />}>
+          <section>
+            <ProjectPage />
+          </section>
+        </Suspense>
       </Fragment>
     )
   }

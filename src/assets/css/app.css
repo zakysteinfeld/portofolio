@@ -59,8 +59,15 @@
     font-family: 'Roboto';
 }
 
+a::selection {
+    color: white !important;
+}
+
+/* home */
+
 .bg-white {
-    background-color: white;
+    /* background-color: rgb(15, 15, 15); */
+    background-image: linear-gradient(to top, rgba(136, 199, 250, 0.226), #ffffff, rgba(136, 199, 250, 0.226));
 }
 
 .name-box {
@@ -78,7 +85,7 @@
     width: fit-content;
     line-height: 1.5em;
     overflow: hidden;
-    box-shadow: 2px 2px 12px 2px rgba(0, 26, 46, 0.5);
+    box-shadow: 2px 2px 12px 2px rgba(0, 26, 46, 0.23);
 }
 
 .pull-left {
@@ -99,7 +106,6 @@
 .section-div {
     width: 70vw;
     height: auto;
-    background-color: white;
     margin: auto;
 }
 
@@ -118,7 +124,7 @@
 }
 
 .shadow {
-    box-shadow: 0px 2px 12px 2px rgba(107, 116, 124, 0.5);
+    box-shadow: 0px 2px 12px 2px rgba(107, 116, 124, 0.23);
 }
 
 .project-title {
@@ -134,7 +140,7 @@
 
 .project-div {
     background-color: white;
-    box-shadow: 0px 1px 12px 2px rgba(107, 116, 124, 0.5);
+    box-shadow: 0px 1px 12px 2px rgba(107, 116, 124, 0.23);
     border-radius: 40px;
     padding: 20px;
     margin-top: -100px;
@@ -164,7 +170,7 @@
     width: 220px;
     height: 295px;
     margin: 20px 10px;
-    box-shadow: 0px 2px 15px 4px rgba(107, 116, 124, 0.5);
+    box-shadow: 0px 2px 15px 4px rgba(107, 116, 124, 0.23);
     transition-duration:0.3s;
 }
 
@@ -221,6 +227,11 @@
 
 .project-modal-div, .ant-modal-content {
     border-radius: 30px;
+    width: 60vw;
+}
+
+.project-modal-div .ant-modal-wrap {
+    left: -250px
 }
 
 .card-img {
@@ -255,4 +266,44 @@
     } to { 
         transform: rotate(5deg); 
     }
+}
+
+/* My Story */
+
+.hi {
+    font-size: 6vw;
+    font-weight: bold;
+    color: black;
+}
+
+.intro {
+    font-size: 1.5vw;
+    text-align: justify !important;
+    color: black;
+}
+
+.mystory-card {
+    background-color: white;
+    height: fit-content; 
+    width: 20vw;
+    border-radius: 25px;
+    padding: 10px 20px;
+}
+
+.text-input-div {
+    margin: 1vh 0vw;
+}
+
+.text-input {
+    border-radius: 25px;
+    margin: 1vh;
+}
+
+label {
+    margin: 5px 0px;
+}
+
+.mail-text {
+    font-size: 1.5vw;
+    font-weight: bold;
 }

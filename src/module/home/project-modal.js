@@ -29,7 +29,7 @@ export default class ProjectModal extends Component {
             onCancel={() => onClickModal(this.state.modalContent, false)}
             closable={false}
             footer={null}
-
+            style={{ left: '-12vw' }}
           >
             <Row className='sf-pro-rounded-regular'>
               <Col span={12}>
@@ -45,7 +45,12 @@ export default class ProjectModal extends Component {
             </Row>
             <Row>
               <Col>
-                {/* <img src={require('./../../assets/img/' + modalContent.image + '.png')} alt={modalContent.image} className='card-img' /> */}
+                { modalContent.appImg ? <img src={require('./../../assets/img/' + modalContent.appImg)} alt={modalContent.image} className='card-img' /> : null}
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+                <span>Tech: { modalContent.tech }</span>
               </Col>
             </Row>
           </Modal>
