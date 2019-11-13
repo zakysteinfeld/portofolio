@@ -113,6 +113,10 @@
     z-index: 1;
 }
 
+.fontsize1comma2vw {
+    font-size: 1.2vw;
+}
+
 .shadow {
     box-shadow: 0px 2px 12px 2px rgba(107, 116, 124, 0.5);
 }

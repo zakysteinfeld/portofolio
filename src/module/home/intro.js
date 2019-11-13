@@ -19,9 +19,9 @@ export default class Intro extends Component {
             <Col span={15} className='sf-pro-rounded-regular' style={{ color: 'white' }}>
               <Row>
                 <Col span={15}>
-                  <span style={{ fontSize: '3em', fontWeight: 'bold' }}>Muhamad Zaky</span>
+                  <span style={{ fontSize: '4vw', fontWeight: 'bold' }}>Muhamad Zaky</span>
                 </Col>
-                <Col span={9} style={{ marginTop: '10px' }}>
+                <Col span={9} style={{ marginTop: '22px', fontSize: '1.16vw' }}>
                   <Row>
                     <Col className='pull-right'>
                       <span>.NET Developer</span>&nbsp;
@@ -36,7 +36,7 @@ export default class Intro extends Component {
                   </Row>
                 </Col>
               </Row>
-              <Row style={{ marginTop: '2vh' }}>
+              <Row className='fontsize1comma2vw' style={{ marginTop: '2vh' }}>
                 <Col span={12}>
                   <span><b>Born</b>: October 23, 2019</span>
                 </Col>
@@ -44,12 +44,12 @@ export default class Intro extends Component {
                   <span><Icon type='environment' theme='filled' /> Bandung, Indonesia</span>
                 </Col>
               </Row>
-              <Row>
+              <Row className='fontsize1comma2vw'>
                 <Col>
                   <span><b>Nationality</b>: Indonesia</span>
                 </Col>
               </Row>
-              <Row style={{ marginTop: '2vh' }}>
+              <Row style={{ marginTop: '2vh', fontSize: '1.1vw', color: 'rgba(0, 0, 0, 0.45)' }}>
                 <Col>
                   <p>I like to write code, drawing, designing, doing sport, listening to music. </p>
                 </Col>
