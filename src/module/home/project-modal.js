@@ -39,11 +39,11 @@ export default class ProjectModal extends Component {
               </Col>
               <Col span={12}>
                 <div className='pull-right'>
-                  <span style={{ fontWeight: 'bold' }}>{ modalContent.year }</span>            
+                  <span style={{ fontWeight: 'bold', backgroundColor: '#d13438', borderRadius: '100px', padding: '3px 10px', color: 'white' }}>{ modalContent.year }</span>            
                 </div>
               </Col>
             </Row>
-            <Row>
+            <Row style={{ margin: '12px 0px' }}>
               <Col>
                 { modalContent.appImg ? <img src={require('./../../assets/img/' + modalContent.appImg)} alt={modalContent.image} className='card-img' /> : null}
               </Col>

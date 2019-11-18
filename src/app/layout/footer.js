@@ -13,7 +13,7 @@ export default class Footer extends Component {
     return (
       <div className='sf-pro-rounded-regular section-div footer'>
         <Row>
-          <Col span={12}>
+          <Col span={12} style={{ fontSize: '0.8vw' }}>
             <span>&copy; 2019 ・ Developed with <Icon type='heart' theme='filled' /> by Muhamad Zaky</span>
           </Col>
           <Col span={12} className='pull-right'>

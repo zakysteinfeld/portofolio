@@ -23,14 +23,8 @@ class LayoutPage extends Component {
   // }
 
   componentWillMount() {
-    const env = 'dev'
-    if (env === 'dev') {
-      this.setState({ env: DEV_ENV})
-      setCookies('env', this.state.env)
-    } else if (env === 'prod') {
-      this.setState({ env: PROD_ENV})
-      setCookies('env', this.state.env)
-    }
+    this.setState({ env: DEV_ENV})
+    setCookies('env', 'DEV_ENV')
   }
   
   
