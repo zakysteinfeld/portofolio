@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Col, Icon, Divider, Button } from 'antd';
+import { Row, Col, Icon, Popconfirm, Button } from 'antd';
 import profilePict from './../../assets/img/pict.jpg';
 
 export default class Intro extends Component {
@@ -13,14 +13,8 @@ export default class Intro extends Component {
           <div className='bg-dopeblue shadow' style={{ position: 'absolute', zIndex: 0, height: '50vh', width: '85vw' }}></div>
         </div>
         <div style={{ position: 'absolute', zIndex: 0, top: '52vh', right: '11.5vw' }}>
-          {/* <a href='https://drive.google.com/open?id=1tAKX1U1CLoloqK6QNuMTf3MrkcdKD-6r'>Download PNG CV</a>
-          <Divider type='vertical' style={{ backgroundColor: 'black !important' }} />
-        <a href='https://drive.google.com/open?id=14e6OKz4qKxZthIMo3-k4UZGJqWiMCy90'>Download PDF CV</a> */}
-
-          <Group className='shadow' style={{ borderRadius: '25px' }}>
-            <Button className='login-form-button' style={{ borderTop: 'transparent', borderBottom: 'transparent', borderLeft: 'transparent', color: 'white', borderTopLeftRadius: '25px', borderBottomLeftRadius: '25px', backgroundColor: '#88C7FA' }} href='https://drive.google.com/open?id=1tAKX1U1CLoloqK6QNuMTf3MrkcdKD-6r' target='_blank'>Download PNG CV</Button>
-            <Button className='login-form-button' style={{ borderTop: 'transparent', borderBottom: 'transparent', borderRight: 'transparent', color: 'white', borderTopRightRadius: '25px', borderBottomRightRadius: '25px', backgroundColor: '#88C7FA' }} href='https://drive.google.com/open?id=14e6OKz4qKxZthIMo3-k4UZGJqWiMCy90' target='_blank'>Download PDF CV</Button>
-          </Group>
+          {/* <Button href='https://drive.google.com/open?id=1tAKX1U1CLoloqK6QNuMTf3MrkcdKD-6r' target='_blank' shape='round' style={{ color: 'white', backgroundColor: '#88C7FA' }}>Download PNG CV</Button> */}
+          <Button className='shadow' href='https://drive.google.com/open?id=14e6OKz4qKxZthIMo3-k4UZGJqWiMCy90' target='_blank' shape='round' style={{ color: 'white', backgroundColor: '#88C7FA' }}>Download PDF CV</Button>
         </div>
         <div className='section-div' style={{ backgroundColor: 'transparent', zIndex: 1 }}>
           <Row className='intro-content-div'>
